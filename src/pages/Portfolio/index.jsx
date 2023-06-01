@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import { useTranslation } from 'react-i18next';
 
 import { Container, Main, PortfolioItem } from './styles';
 import { Header } from '../../components/Header';
@@ -13,6 +14,8 @@ import previewFocusTimer from '../../assets/portfolio/focustimer.png';
 import previewPersonalEnglish from '../../assets/portfolio/personalenglish.png';
 
 export function Portfolio() {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <Header />
@@ -38,19 +41,17 @@ export function Portfolio() {
             <ItemTags tag="p">
               <div className="p-container">
                 <p>
-                  RocketMovies is a React web app where you can create an account and register 
-                  information about movies you've watched, and search through your movie database. 
+                  {t('portfolio.rocketmovies.p1')} 
                 </p>
                 <p>
-                  The layout design was created by Rocketseat, and the app is currently only in Portuguese.
+                  {t('portfolio.rocketmovies.p2')}
                 </p>
                 <p>
-                  If you'd like to try the demo, you can use the credentials below. They wil allow you to navigate throught
-                  all pages of the app, and see movies already registered in the database. Please feel free to register your own user as well:
+                  {t('portfolio.rocketmovies.p3')}
                 </p>
                 <p>
                   Login: jessica@email.com<br />
-                  Password: 123
+                  {t('portfolio.rocketmovies.p4')}: 123
                 </p>
               </div>
             </ItemTags>
@@ -96,7 +97,7 @@ export function Portfolio() {
                 image={previewRocketmovies}
                 alt="thumbnail image of the rocketmovies web app screen"
               />
-              <p className="small-text">Click image to expand</p>
+              <p className="small-text">{t('portfolio.imageText')}</p>
             </div>
             <div className="mobile-only">
               <ItemTags tag="img">
@@ -118,7 +119,7 @@ export function Portfolio() {
                 image={previewEnglishTravel}
                 alt="thumbnail image of the english travel website"
               />
-              <p className="small-text">Click image to expand</p>
+              <p className="small-text">{t('portfolio.imageText')}</p>
             </div>
             <div className="mobile-only">
               <ItemTags tag="img">
@@ -137,18 +138,16 @@ export function Portfolio() {
             <ItemTags tag="p">
               <div className="p-container">
                 <p>
-                  This is a landing page for an online travel English language course, with the purpose of providing
-                  all the information about the course and CTA to the checkout page.
+                  {t('portfolio.englishtravel.p1')} 
                 </p>
                 <p>
-                  Since the previous version was created with WordPress + Elementor Pro, 
-                  and also for quick delivery and amount of page content, I decided to keep using that combo.
+                  {t('portfolio.englishtravel.p2')} 
                 </p>
                 <p>
-                  I created the layout using Figma, with the intention of using the brand colors and having a big hero section.
+                  {t('portfolio.englishtravel.p3')} 
                 </p>
                 <p>
-                  The layout is fully-responsive with mobile, tablet and desktop versions.
+                  {t('portfolio.englishtravel.p4')} 
                 </p>
               </div>
             </ItemTags>
@@ -167,7 +166,7 @@ export function Portfolio() {
             <ItemTags tag="ul">
               <ul>
                 <li>
-                  &gt; <a href="https://conexaobritanica.com/english-travel" target="_blank">Live page</a>
+                  &gt; <a href="https://conexaobritanica.com/english-travel" target="_blank">{t('portfolio.englishtravel.link')}</a>
                 </li>
               </ul>
             </ItemTags>
@@ -187,18 +186,16 @@ export function Portfolio() {
             <ItemTags tag="p">
               <div className="p-container">
                 <p>
-                  This was my first full project with HTML, CSS and JavaScript all together. 
+                  {t('portfolio.focustimer.p1')} 
                 </p>
                 <p>
-                  It's a web app timer for studying or meditating with background music options, volume control,
-                 and dark & light modes.
+                  {t('portfolio.focustimer.p2')} 
                 </p>
                 <p>
-                  The web app also features buttons with play and pause functions, buttons to add and remove 5 minutes
-                  from the timer, and a volume slider.
+                  {t('portfolio.focustimer.p3')} 
                 </p>
                 <p>
-                  The layout was based on a Figma design provided by Rocketseat. The layout is fully responsive.
+                  {t('portfolio.focustimer.p4')} 
                 </p>
               </div>
             </ItemTags>
@@ -215,7 +212,7 @@ export function Portfolio() {
             <ItemTags tag="ul">
               <ul>
                 <li>
-                  &gt; <a href="https://github.com/jessicaranft/explorer-Stage05-FocusTimer-DarkMode" target="_blank">GitHub repository</a>
+                  &gt; <a href="https://github.com/jessicaranft/explorer-Stage05-FocusTimer-DarkMode" target="_blank">{t('portfolio.focustimer.link')}</a>
                 </li>
                 <li>
                   &gt; <a href="https://jessicaranft.github.io/explorer-Stage05-FocusTimer-DarkMode/" target="_blank">Demo</a>
@@ -235,7 +232,7 @@ export function Portfolio() {
                 image={previewFocusTimer}
                 alt="thumbnail image of the focustimer web app screen"
               />
-              <p className="small-text">Click image to expand</p>
+              <p className="small-text">{t('portfolio.imageText')}</p>
             </div>
             <div className="mobile-only">
               <ItemTags tag="img">
@@ -257,7 +254,7 @@ export function Portfolio() {
                 image={previewPersonalEnglish}
                 alt="thumbnail image of the personal english website"
               />
-              <p className="small-text">Click image to expand</p>
+              <p className="small-text">{t('portfolio.imageText')}</p>
             </div>
             <div className="mobile-only">
               <ItemTags tag="img">
@@ -276,15 +273,13 @@ export function Portfolio() {
             <ItemTags tag="p">
               <div className="p-container">
                 <p>
-                  This is a landing page for online private English lessons, with the purpose of calling people
-                  to sign up for a waiting list. The page provides full description about the lessons and teacher,
-                  and has a sign up form where people can register o join the waiting list.
+                  {t('portfolio.personalenglish.p1')} 
                 </p>
                 <p>
-                  The layout was created using the combo WordPress + Elementor Pro.
+                  {t('portfolio.personalenglish.p2')} 
                 </p>
                 <p>
-                  The layout is fully-responsive with mobile, tablet and desktop versions.
+                  {t('portfolio.personalenglish.p3')} 
                 </p>
               </div>
             </ItemTags>
@@ -302,7 +297,7 @@ export function Portfolio() {
             <ItemTags tag="ul">
               <ul>
                 <li>
-                  &gt; <a href="https://conexaobritanica.com/personal-english" target="_blank">Live page</a>
+                  &gt; <a href="https://conexaobritanica.com/personal-english" target="_blank">{t('portfolio.personalenglish.link')}</a>
                 </li>
               </ul>
             </ItemTags>

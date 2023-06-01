@@ -30,16 +30,19 @@ export const Main = styled.main`
   flex-grow: 1;
   min-height: 50vh;
 
+  .reverse {
+    display: flex;
+  }
+
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     padding: 0 2.4rem;
     margin: 3.6rem auto;
-  }
 
-  .reverse {
-    display: flex;
-    flex-direction: column;
+    .reverse {
+      flex-direction: column;
+    }
   }
 `;
 

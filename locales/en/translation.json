@@ -1,0 +1,73 @@
+{
+  "menu": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Get in touch"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+  "home": {
+    "p": "Hi, my name is",
+    "h2": "Front End Web Developer",
+    "downloadButton": "Download CV"
+  },
+  "about": {
+    "h1": "About me",
+    "birthdayTitle": "Birthday",
+    "birthdayContent": "13 April",
+    "nationalityTitle": "Nationality",
+    "nationalityContent": "Brazil/United Kingdom",
+    "studyTitle": "Study",
+    "studyContent": "System Analysis and Development",
+    "interestTitle": "Interest",
+    "interestContent": "Playing the piano",
+    "p1": "Hi, my name is Jessica Ranft, and I'm a Front-End Web Developer based in Brasília - Brazil.",
+    "p2": "My passion for web development started as a young teenager when I first discovered websites. I felt absolutely amazed by them and decided that I would learn to create my own website, no matter what. I learned HTML and CSS by myself studying the source code from other websites, and started creating and publishing my first websites in the early 2000s.",
+    "p3": "A few years later, I landed my first freelance job as a web designer, and that was my first job ever. I continued working with website creation and maintenance throughout all my student years.",
+    "p4": "After university, I stopped working with websites and started working as a piano teacher (my university course was music, focused on classical piano). I kept teaching piano until I discovered that, while I love music and piano, my real professional passion is in the technology area.",
+    "p5": "I then decided to start a course about web development to update myself with the latest technologies, and also to \"formerly educate\" myself in HTML, CSS, JavaScript, and all the other languages and technologies involved.",
+    "p6": "My approach to every project is to plan carefully every step of the way with my clients, understanding their needs, and delivering the most professional result as possible. I'm committed to delivering high-quality results that exceed the clients' expectations and achieve their objectives.",
+    "p7": "In addition to my technical skills, I pride myself on being highly attentive to details and committed to my job, which allows me to deliver a beautiful and harmonious looking layout focused on the features that are important to the clients' businesses.",
+    "p8": "I also believe in fostering strong relationships with my clients and colleagues, and I'm always willing to go the extra mile to ensure their success. I'm a strong collaborator and team player, with excellent communication skills that allow me to work effectively with clients and colleagues alike.",
+    "p9": "My ability to work collaboratively and communicate effectively ensures that projects run smoothly and that all stakeholders are kept informed and engaged throughout the development process. I believe that building strong relationships is key to achieving successful outcomes, and I always strive to foster a positive and productive working environment.",
+    "p10": "If you're looking for a Front End Web Developer who is passionate, fast-learning and detailed-oriented, please don't hesitate to contact me. I'm excited to learn more about your needs and/or your clients', and how I can help you achieve your/their goals.",
+    "h2": "Skills"
+  },
+  "portfolio": {
+    "imageText": "Click image to expand",
+    "rocketmovies": {
+      "p1": "RocketMovies is a React web app where you can create an account and register information about movies you've watched, and search through your movie database.",
+      "p2": "The layout design was created by Rocketseat, and the app is currently only in Portuguese.",
+      "p3": "If you'd like to try the demo, you can use the credentials below. They wil allow you to navigate throught all pages of the app, and see movies already registered in the database. Please feel free to register your own user as well:",
+      "p4": "Password"
+    },
+    "englishtravel": {
+      "p1": "This is a landing page for an online travel English language course, with the purpose of providing all the information about the course and CTA to the checkout page.",
+      "p2": "Since the previous version was created with WordPress + Elementor Pro, and also for quick delivery and amount of page content, I decided to keep using that combo.",
+      "p3": "I created the layout using Figma, with the intention of using the brand colors and having a big hero section.",
+      "p4": "The layout is fully-responsive with mobile, tablet and desktop versions.",
+      "link": "Live page"
+    },
+    "focustimer": {
+      "p1": "This was my first full project with HTML, CSS and JavaScript all together.",
+      "p2": "It's a web app timer for studying or meditating with background music options, volume control, and dark & light modes.",
+      "p3": "The web app also features buttons with play and pause functions, buttons to add and remove 5 minutes from the timer, and a volume slider.",
+      "p4": "The layout was based on a Figma design provided by Rocketseat. The layout is fully responsive.",
+      "link": "GitHub repository"
+    },
+    "personalenglish": {
+      "p1": "This is a landing page for online private English lessons, with the purpose of calling people to sign up for a waiting list. The page provides full description about the lessons and teacher, and has a sign up form where people can register o join the waiting list.",
+      "p2": "The layout was created using the combo WordPress + Elementor Pro.",
+      "p3": "The layout is fully-responsive with mobile, tablet and desktop versions.",
+      "link": "Live page"
+    }
+  },
+  "contact": {
+    "h1": "Get in touch",
+    "formName": "Your name",
+    "formEmail": "Your email",
+    "formMessage": "Your message",
+    "formButton": "Send message"
+  }
+}

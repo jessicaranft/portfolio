@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FiDownload } from 'react-icons/fi';
 import { TypeAnimation } from 'react-type-animation';
+import { useTranslation } from 'react-i18next';
 
 import { Container, Main } from './styles';
 import { Header} from '../../components/Header';
@@ -9,6 +10,15 @@ import { ItemTags } from '../../components/ItemTags';
 import hero from '../../assets/hero.png';
 
 export function Home() {
+  const { t } = useTranslation();
+
+  const TranslatedTypeAnimation = ({ sequence, ...rest }) => {
+    const { t } = useTranslation();
+    const translatedSequence = sequence.map((text) => t(text));
+
+    return <TypeAnimation sequence={translatedSequence} {...rest} />;
+  };
+
   const DelayedTypeAnimation = ({ sequence, delay, ...rest }) => {
     const [isReady, setisReady] = useState(false);
   
@@ -20,8 +30,12 @@ export function Home() {
       return () => clearTimeout(timer);
     }, [delay]);
 
-    return isReady ? <TypeAnimation sequence={sequence} {...rest} /> : null;
-  }
+    const translatedSequence = sequence.map((text) => t(text));
+
+    return isReady? (
+      <TypeAnimation sequence={translatedSequence} {...rest} />
+    ) : null;
+  };
 
   return (
     <Container>
@@ -32,8 +46,8 @@ export function Home() {
         <div className="main-content">
           <div className="p-wrapper">
             <ItemTags tag="p">
-              <TypeAnimation
-                sequence={['Hi, my name is']}
+              <TranslatedTypeAnimation
+                sequence={[t('home.p')]}
                 cursor={false}
                 repeat={1}
                 wrapper={'p'}
@@ -56,7 +70,7 @@ export function Home() {
           <div className="h2-wrapper">
             <ItemTags tag="h2">
               <DelayedTypeAnimation
-                sequence={['Front End Web Developer']}
+                sequence={[t('home.h2')]}
                 cursor={true}
                 repeat={1}
                 wrapper={'h2'}
@@ -67,7 +81,7 @@ export function Home() {
 
           <div className="button-container">
             <ItemTags tag="button">
-              <button>Download CV<FiDownload /></button>
+              <button>{t('home.downloadButton')}<FiDownload /></button>
             </ItemTags>
           </div>
 

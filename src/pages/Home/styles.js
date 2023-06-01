@@ -72,9 +72,20 @@ export const Main = styled.main`
     justify-content: center;
     padding: 5.6rem 2.4rem;
 
-    p {
-      font-size: 2.2rem;
-      line-height: 2.9rem;
+    .main-content {
+      min-width: auto;
+    }
+    .p-wrapper {
+      min-height: 36px;
+
+    }
+
+    .h1-wrapper {
+      min-height: 70px;
+    }
+
+    .h2-wrapper {
+      min-height: 50px;
     }
 
     .main-content {
@@ -91,8 +102,8 @@ export const Main = styled.main`
     }
 
     .hero {
-    max-width: 28.1rem;
-    margin: auto;
+      max-width: 28.1rem;
+      margin: auto;
   }
   }
 `;

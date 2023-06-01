@@ -1,12 +1,19 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TfiMenu, TfiClose } from 'react-icons/tfi';
+import { useTranslation } from 'react-i18next';
 
 import { Container, Branding, Menu, Languages } from './styles';
 import { Social } from '../Social';
 import { MobileMenu } from '../../components/MobileMenu';
 
 export function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   function handleMenu() {
     const openMenu = document.getElementById('open-menu');
     const closeMenu = document.getElementById('close-menu');
@@ -66,13 +73,13 @@ export function Header() {
           <Menu>
             <ul>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about">{t('menu.about')}</Link>
               </li>
               <li>
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio">{t('menu.portfolio')}</Link>
               </li>
               <li>
-                <Link to="/contact">Get in touch</Link>
+                <Link to="/contact">{t('menu.contact')}</Link>
               </li>
             </ul>
           </Menu>
@@ -80,8 +87,8 @@ export function Header() {
           <Social />
 
           <Languages>
-            <button>EN</button>
-            <button>PT</button>
+            <button onClick={() => changeLanguage('en')}>EN</button>
+            <button onClick={() => changeLanguage('pt')}>PT</button>
           </Languages>
         </nav>
       </div>

@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-import { Container, Branding } from './styles';
+import { Container, Branding, Languages } from './styles';
 import { Social } from '../Social';
 
 export function MobileMenu() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Container>
       <header>
@@ -16,15 +23,20 @@ export function MobileMenu() {
 
       <div className="nav-container">
         <nav>
+        <Languages>
+          <button onClick={() => changeLanguage('en')}>EN</button>
+          <button onClick={() => changeLanguage('pt')}>PT</button>
+        </Languages>
+
           <ul>
             <li>
-              <Link to="/about">&lt;About /&gt;</Link>
+              <Link to="/about">&lt;{t('menu.about')} /&gt;</Link>
             </li>
             <li>
-              <Link to="/portfolio">&lt;Portfolio /&gt;</Link>
+              <Link to="/portfolio">&lt;{t('menu.portfolio')} /&gt;</Link>
             </li>
             <li>
-              <Link to="/contact">&lt;Get in touch /&gt;</Link>
+              <Link to="/contact">&lt;{t('menu.contact')} /&gt;</Link>
             </li>
           </ul>
 

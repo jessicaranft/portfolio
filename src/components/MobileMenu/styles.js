@@ -67,3 +67,20 @@ export const Branding = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
   }
 `;
+
+export const Languages = styled.div`
+  display: flex;
+  gap: .8rem;
+  margin-bottom: 1.6rem;
+
+  button {
+    padding: .6rem;
+    background: none;
+    border: none;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  button:active {
+    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+  }
+`;
