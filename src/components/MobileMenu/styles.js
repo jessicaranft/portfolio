@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 60vw;
+  width: 70vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
 
   > header {
     display: flex;
@@ -21,12 +16,13 @@ export const Container = styled.div`
 
   .nav-container {
     width: 100%;
+    height: 100vh;
     padding: 0 2.4rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 
     > nav {
       width: 100%;
@@ -34,6 +30,7 @@ export const Container = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      margin-top: -2.4rem;
 
       ul {
         width: 100%;

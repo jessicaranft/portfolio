@@ -18,9 +18,26 @@ export function Header() {
     const openMenu = document.getElementById('open-menu');
     const closeMenu = document.getElementById('close-menu');
     const menu = document.getElementById('menu');
+
+    if (menu.classList.contains('hide')) {
+      menu.classList.remove('hide');
+      menu.classList.remove('slide-out');
+      menu.classList.add('slide-in');
+      openMenu.classList.add('hide');    
+      closeMenu.classList.remove('hide');
+    } else {
+      menu.classList.remove('slide-in');
+      menu.classList.add('slide-out');
+      openMenu.classList.remove('hide');    
+      closeMenu.classList.add('hide');
+      setTimeout(() => {
+        menu.classList.add('hide');
+      }, 700);
+    }
+
+    /*menu.classList.toggle('hide');
     openMenu.classList.toggle('hide');    
-    closeMenu.classList.toggle('hide');
-    menu.classList.toggle('hide');
+    closeMenu.classList.toggle('hide');*/
   }
 
   useEffect(() => {

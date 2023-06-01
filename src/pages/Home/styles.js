@@ -81,11 +81,11 @@ export const Main = styled.main`
     }
 
     .h1-wrapper {
-      min-height: 70px;
+      min-height: 60px;
     }
 
     .h2-wrapper {
-      min-height: 50px;
+      min-height: 48px;
     }
 
     .main-content {

@@ -13,6 +13,8 @@ export const Container = styled.div`
   padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
   padding-right: clamp(3rem, 5rem + 2vw, 15.6rem);
 
+  position: relative;
+
   .nav-container {
     width: 100%;
     display: flex;
@@ -59,17 +61,37 @@ export const Container = styled.div`
     }
 
     #menu {
-    animation: slide 700ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
     }
 
-    @keyframes slide {
-    0% {
-      transform: translateX(-500px);
+    .slide-in {
+      animation: slide-in 700ms;
     }
-    100% {
-      transform: translateX(0);
+
+    .slide-out {
+      animation: slide-out 700ms;
     }
-  }
+
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-500px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-out {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-500px);
+      }
+    }
   }
 `;
 

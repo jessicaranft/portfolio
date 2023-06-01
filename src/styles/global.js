@@ -77,11 +77,11 @@ export default createGlobalStyle`
 
   @media only screen and (max-width: 768px) {
     h1 {
-      font-size: 4.8rem;
+      font-size: 3.8rem;
     }
 
     h2 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
     }
 
     .desktop-only {
