@@ -9,11 +9,6 @@ export const Container = styled.div`
     margin: auto;
   }
 
-  .section-title {
-    padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
-    margin-bottom: 5.6rem;
-  }
-
   > section {
     margin-bottom: 6rem;
   }
@@ -101,9 +96,6 @@ export const Main = styled.main`
   justify-content: center;
   gap: 5.6rem;
 
-  flex-grow: 1;
-  min-height: 50vh;
-
   .top-container {
     width: 100%;
     display: flex;
@@ -115,6 +107,7 @@ export const Main = styled.main`
 
   .top-container-text {
     display: flex;
+    justify-content: flex-start;
     gap: 2.4rem;
   }
 
@@ -129,8 +122,13 @@ export const Main = styled.main`
   }
 
   .middle-container {
-    line-height: 2.1rem;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .p-block-container {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
@@ -151,4 +149,28 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
   }
+
+  .top-container-text {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    grid-row-gap: .4rem;
+  }
 `;
+
+/*
+export const Summary = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  margin: auto;
+  padding: 3.2rem;
+  background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
+
+  li a {
+    color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
+  }
+`;
+*/

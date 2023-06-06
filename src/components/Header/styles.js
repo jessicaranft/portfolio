@@ -118,11 +118,6 @@ export const Menu = styled.ul`
   }
 `;
 
-export const Social = styled.div`
-  display: flex;
-  gap: 2.4rem;
-`;
-
 export const Languages = styled.div`
   display: flex;
   gap: .8rem;
@@ -134,7 +129,7 @@ export const Languages = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  button:active {
+  button.selected {
     border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   }
 `;

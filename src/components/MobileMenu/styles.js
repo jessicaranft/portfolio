@@ -77,7 +77,7 @@ export const Languages = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  button:active {
+  button.selected {
     border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   }
 `;

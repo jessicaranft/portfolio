@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -6,10 +7,12 @@ import { Social } from '../Social';
 
 export function MobileMenu() {
   const { t, i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
 
-  const changeLanguage = (lng) => {
+  function changeLanguage(lng) {
     i18n.changeLanguage(lng);
-  };
+    setSelectedLanguage(lng);
+  }
 
   return (
     <Container>
@@ -24,8 +27,18 @@ export function MobileMenu() {
       <div className="nav-container">
         <nav>
         <Languages>
-          <button onClick={() => changeLanguage('en')}>EN</button>
-          <button onClick={() => changeLanguage('pt')}>PT</button>
+          <button
+            onClick={() => changeLanguage('en')}
+            className={selectedLanguage === 'en' ? 'selected' : ''}
+          >
+            EN
+          </button>
+          <button
+            onClick={() => changeLanguage('pt')}
+            className={selectedLanguage === 'pt' ? 'selected' : ''}
+          >
+            PT
+          </button>
         </Languages>
 
           <ul>

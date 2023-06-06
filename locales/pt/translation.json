@@ -9,7 +9,7 @@
   },
   "home": {
     "p": "Olá, meu nome é",
-    "h2": "Desenvolvedora Front End",
+    "h2": "Desenvolvedora Web Front-End",
     "downloadButton": "Baixar currículo"
   },
   "about": {
@@ -21,18 +21,24 @@
     "studyTitle": "Estudo",
     "studyContent": "Análise de Desenvolvimento de Sistemas",
     "interestTitle": "Interesse",
-    "interestContent": "Tocar piano",
+    "interestContent": "Tocar piano clássico",
+    "summary": "Sumário",
+    "howItStarted": "Como tudo começou",
+    "toThisDate": "Nos dias atuais",
+    "workStyle": "Meu estilo de trabalho",
+    "teamPlayer": "Trabalho em equipe",
+    "workWithMe": "Trabalhe comigo",
+    "skills": "Habilidades",
     "p1": "Olá, meu nome é Jessica Ranft, e sou uma Desenvolvedora Front-End que mora em Brasília/Brasil.",
     "p2": "Minha paixão pelo desenvolvimento web cedo na adolescência, quando descobri os websites pela primeira vez. Eles me surpreenderam e decidi que aprenderia a criar meu próprio site, não importa como. Aprendi HTML e CSS sozinha, estudando o código-fonte de outros sites e comecei a projetar e publicar meus primeiros sites no início dos anos 2000.",
     "p3": "Dois anos depois, consegui meu primeiro emprego freelancer como web designer, e esse foi meu primeiro trabalho remunerado na vida. Continuei trabalhando com a criação e manutenção de websites durante todos os meus anos de estudante.",
     "p4": "Depois da universidade, parei de trabalhar com websites e comecei a trabalhar como professora de piano (meu curso na universidade era Música, com foco em piano clássico). Continuei ensinando piano até descobrir que, apesar de amar música e piano, minha verdadeira paixão profissional estava na área de tecnologia.",
-    "p5": "Decidi então começar um curso de desenvolvimento web para me atualizar com as últimas tecnologias, e também me \"educar formalmente\" em HTML, CSS, JavaScript, e todas as outras linguagens envolvidas.",
+    "p5": "Decidi então começar um curso de desenvolvimento web para me atualizar com as últimas tecnologias, e também me \"educar formalmente\" em HTML, CSS, Javascript, e todas as outras linguagens envolvidas.",
     "p6": "Meu foco em todo projeto está no planejamento cuidadoso de cada etapa do processo com meus clientes, entendendo suas necessidades, e entregando o resultado mais profissional possível. Sou comprometida com a entrega de resultados de alta qualidade que excedam as expectativas dos clientes e alcancem seus objetivos.",
     "p7": "Além das minhas habilidades técnicas, me orgulho por ter uma grande atenção a detalhes e ser comprometida com o meu trabalho, o que me permite entregar layouts bonitos e harmoniosos, focados nos recursos que são importantes aos negócios dos clientes.",
     "p8": "Acredito também no cultivo das relações com meus clientes e colegas, e estou sempre disposta a ir além para garantir seu sucesso. Sou uma forte colaboradora e trabalho bem em equipe, com ótima habilidade de comunicação adquirida nos meus anos ensinando pessoas todos os dias, e isso me permite trabalhar de forma eficaz com clientes e colegas.",
     "p9": "Minha habilidade em trabalhar de forma colaborativa e de me comunicar de forma eficiente garante que os projetos sejam feitos de forma suave e que todas as partes interessadas permaneçam informadas e engajadas durante o processo de desenvolvimento. Acredito que construir fortes relacionamentos é a chave para alcançar resultados de sucesso, e sempre procuro manter um ambiente de trabalho positivo e produtivo.",
-    "p10": "Se você está procurando por uma Desenvolvedora Front-End que tem paixão pelo trabalho, aprende rápido e é orientada a detalhes, entre em contato comigo! Ficarei feliz em saber mais sobre suas necessidades como cliente ou empresa contratante, e em como posso ajudar você a atingir seus objetivos.",
-    "h2": "Habilidades"
+    "p10": "Se você está procurando por uma Desenvolvedora Front-End que tem paixão pelo trabalho, aprende rápido e é orientada a detalhes, entre em contato comigo! Ficarei feliz em saber mais sobre suas necessidades como cliente ou empresa contratante, e em como posso ajudar você a atingir seus objetivos."
   },
   "portfolio": {
     "imageText": "Clique na imagem para expandir",
@@ -50,7 +56,7 @@
       "link": "Página ao vivo"
     },
     "focustimer": {
-      "p1": "Esse foi o meu primeiro projeto reunindo HTML, CSS e JavaScript de uma só vez.",
+      "p1": "Esse foi o meu primeiro projeto reunindo HTML, CSS e Javascript de uma só vez.",
       "p2": "Trata-se de um aplicativo web para estudo ou meditação, com opções de músicas de fundo, controle de volume, e modo claro e escuro.",
       "p3": "Esse aplicativo possui botões com funções de play e pause, botões para adicionar ou remover 5 minutos do timer, e um slider de volume.",
       "p4": "O layout foi baseado em um design no Figma fornecido pela Rocketseat. O layout é também completamente responsivo.",

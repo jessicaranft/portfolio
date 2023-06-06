@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TfiMenu, TfiClose } from 'react-icons/tfi';
 import { useTranslation } from 'react-i18next';
@@ -9,36 +9,56 @@ import { MobileMenu } from '../../components/MobileMenu';
 
 export function Header() {
   const { t, i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
 
-  const changeLanguage = (lng) => {
+  function changeLanguage(lng) {
     i18n.changeLanguage(lng);
-  };
+    setSelectedLanguage(lng);
+  }
 
-  function handleMenu() {
+  function handleMenuOpen() {
     const openMenu = document.getElementById('open-menu');
     const closeMenu = document.getElementById('close-menu');
     const menu = document.getElementById('menu');
 
-    if (menu.classList.contains('hide')) {
-      menu.classList.remove('hide');
-      menu.classList.remove('slide-out');
-      menu.classList.add('slide-in');
-      openMenu.classList.add('hide');    
-      closeMenu.classList.remove('hide');
-    } else {
-      menu.classList.remove('slide-in');
-      menu.classList.add('slide-out');
-      openMenu.classList.remove('hide');    
-      closeMenu.classList.add('hide');
-      setTimeout(() => {
-        menu.classList.add('hide');
-      }, 700);
+    menu.classList.remove('hide');
+    menu.classList.remove('slide-out');
+    menu.classList.add('slide-in');
+    openMenu.classList.add('hide');    
+    closeMenu.classList.remove('hide');
+  }
+
+  function handleMenuClose() {
+    const openMenu = document.getElementById('open-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const menu = document.getElementById('menu');
+    
+    menu.classList.remove('slide-in');
+    menu.classList.add('slide-out');
+    openMenu.classList.remove('hide');    
+    closeMenu.classList.add('hide');
+    setTimeout(() => {
+      menu.classList.add('hide');
+    }, 700);
+  }
+
+  useEffect(() => {
+    function closeMenuOutsideClick(e) {
+      const menu = document.getElementById('menu');
+      const openMenu = document.getElementById('open-menu');
+      const closeMenu = document.getElementById('close-menu');
+      
+      if (!menu.contains(e.target) && !openMenu.contains(e.target) && !closeMenu.contains(e.target)) {
+        handleMenuClose();
+      }
     }
 
-    /*menu.classList.toggle('hide');
-    openMenu.classList.toggle('hide');    
-    closeMenu.classList.toggle('hide');*/
-  }
+    document.body.addEventListener('click', closeMenuOutsideClick);
+
+    return () => {
+      document.body.removeEventListener('click', closeMenuOutsideClick);
+    };
+  }, []);
 
   useEffect(() => {
     function backgroundEffect() {
@@ -104,17 +124,27 @@ export function Header() {
           <Social />
 
           <Languages>
-            <button onClick={() => changeLanguage('en')}>EN</button>
-            <button onClick={() => changeLanguage('pt')}>PT</button>
+            <button
+              onClick={() => changeLanguage('en')}
+              className={selectedLanguage === 'en' ? 'selected' : ''}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => changeLanguage('pt')}
+              className={selectedLanguage === 'pt' ? 'selected' : ''}
+            >
+              PT
+            </button>
           </Languages>
         </nav>
       </div>
 
       <div className="mobile-only cursor-pointer" id="open-menu">
-        <TfiMenu size={36} onClick={handleMenu} />
+        <TfiMenu size={36} onClick={handleMenuOpen} />
       </div>
       <div className="mobile-only cursor-pointer hide" id="close-menu">
-        <TfiClose size={36} onClick={handleMenu} />
+        <TfiClose size={36} />
       </div>
 
     </Container>
