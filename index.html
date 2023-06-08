@@ -13,7 +13,13 @@
   </head>
   <body>
     <!-- Netlify Forms handler -->
-    <form name="contact" netlify hidden>
+    <form
+      name="contact"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+      data-netlify-recaptcha="true"
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
