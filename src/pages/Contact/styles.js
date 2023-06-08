@@ -50,10 +50,6 @@ export const Main = styled.main`
   }
 `;
 
-export const Form = styled.form`
-  width: 100%;
-`;
-
 export const Input = styled.input`
   width: 100%;
   height: 5.6rem;
