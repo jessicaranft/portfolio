@@ -31,7 +31,7 @@ export function Contact() {
         </ItemTags>
 
         <ItemTags tag="form">
-          <Form>
+          <Form name="contact" method="POST" netlify>
             <label htmlFor="name" className="sr-only">{t('contact.formName')}</label>
             <Input type="text" name="name" placeholder={t('contact.formName')} />
 
@@ -41,7 +41,7 @@ export function Contact() {
             <label htmlFor="message" className="sr-only">{t('contact.formMessage')}</label>
             <Textarea name="message" placeholder={t('contact.formMessage')} />
 
-            <Button type="button">{t('contact.formButton')}</Button>
+            <Button type="submit">{t('contact.formButton')}</Button>
           </Form>
         </ItemTags>
       </Main>
