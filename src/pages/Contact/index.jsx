@@ -32,11 +32,12 @@ export function Contact() {
 
         <ItemTags tag="form">
           <form name="contact" method="POST" netlify>
+            <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" className="sr-only">{t('contact.formName')}</label>
             <Input type="text" name="name" placeholder={t('contact.formName')} />
 
             <label htmlFor="email" className="sr-only">{t('contact.formEmail')}</label>
-            <Input type="text" name="email" placeholder={t('contact.formEmail')} />
+            <Input type="email" name="email" placeholder={t('contact.formEmail')} />
 
             <label htmlFor="message" className="sr-only">{t('contact.formMessage')}</label>
             <Textarea name="message" placeholder={t('contact.formMessage')} />
