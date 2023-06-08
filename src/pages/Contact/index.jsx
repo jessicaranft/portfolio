@@ -31,7 +31,7 @@ export function Contact() {
         </ItemTags>
 
         <ItemTags tag="form">
-          <form name="contact" method="POST" data-netlify-recaptcha="true">
+          <form name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" className="sr-only">{t('contact.formName')}</label>
             <Input type="text" name="name" placeholder={t('contact.formName')} />
@@ -41,8 +41,6 @@ export function Contact() {
 
             <label htmlFor="message" className="sr-only">{t('contact.formMessage')}</label>
             <Textarea name="message" placeholder={t('contact.formMessage')} />
-
-            <div data-netlify-recaptcha="true"></div>
 
             <Button type="submit">{t('contact.formButton')}</Button>
           </form>
