@@ -65,6 +65,10 @@ export const Main = styled.main`
     min-height: 100px;
   }
 
+  .button-container a {
+      text-decoration: none;
+    }
+
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;

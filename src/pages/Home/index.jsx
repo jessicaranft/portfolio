@@ -81,7 +81,9 @@ export function Home() {
 
           <div className="button-container">
             <ItemTags tag="button">
-              <button>{t('home.downloadButton')}<FiDownload /></button>
+              <a href="https://drive.google.com/file/d/1SlG7AvVGYXL-b2VBiHVE0L6WxWJBDkWc/view?usp=sharing" target="_blank">
+                <button>{t('home.downloadButton')}<FiDownload /></button>
+              </a>
             </ItemTags>
           </div>
 
