@@ -42,6 +42,12 @@
   },
   "portfolio": {
     "imageText": "Clique na imagem para expandir",
+    "portfolio": {
+      "p1": "Este portfólio foi projetado por mim no Figma, e desenvolvido com React.",
+      "p2": "Minha ideia para o design era criar um tema de \"codificação\", com elementos que lembram tags e estilos que usamos no desenvolvimento front-end.",
+      "p3": "Você pode visualizart o código completo deste portfólio no link do Github abaixo.",
+      "link": "Repositório no Github"
+    },
     "rocketmovies": {
       "p1": "RocketMovies é um aplicativo web em React onde você pode criar uma conta e cadastrar informações sobre filmes que você assistiu, além de fazer buscas no seu banco de dados pessoal de filmes.",
       "p2": "O layout foi criado pela Rocketseat, e ao aplicativo está somente em Português.",

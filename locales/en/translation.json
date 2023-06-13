@@ -42,6 +42,12 @@
   },
   "portfolio": {
     "imageText": "Click image to expand",
+    "portfolio": {
+      "p1": "This portfolio was designed by me on Figma and developed with React.",
+      "p2": "My idea for the design was to create a \"coding\" theme, with elements that resemble coding tags and styles that we use in front-end development.",
+      "p3": "You can view the full code for this portfolio web app in the GitHub link below.",
+      "link": "GitHub repository"
+    },
     "rocketmovies": {
       "p1": "RocketMovies is a React web app where you can create an account and register information about movies you've watched, and search through your movie database.",
       "p2": "The layout design was created by Rocketseat, and the app is currently only in Portuguese.",

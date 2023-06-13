@@ -12,6 +12,7 @@ import previewRocketmovies from '../../assets/portfolio/rocketmovies.png';
 import previewEnglishTravel from '../../assets/portfolio/englishtravel.png';
 import previewFocusTimer from '../../assets/portfolio/focustimer.png';
 import previewPersonalEnglish from '../../assets/portfolio/personalenglish.png';
+import previewPortfolio from '../../assets/portfolio/portfolio.png';
 
 export function Portfolio() {
   const { t } = useTranslation();
@@ -29,6 +30,70 @@ export function Portfolio() {
             wrapper={'h1'}
           />
         </ItemTags>
+
+        <PortfolioItem className="reverse">
+          <div className="grid-image">
+            <div className="mobile-only">
+              <ItemTags tag="h2">
+                <h2>&lt;Portfolio /&gt;</h2>
+              </ItemTags>
+            </div>
+            <div className="desktop-only">
+              <ImageModal
+                image={previewPortfolio}
+                alt="thumbnail image of my portfolio website"
+              />
+              <p className="small-text">{t('portfolio.imageText')}</p>
+            </div>
+            <div className="mobile-only">
+              <ItemTags tag="img">
+                <img src={previewPortfolio} alt="thumbnail image of my portfolio website" />
+              </ItemTags>
+            </div>
+          </div>
+
+          <div className="grid-text">
+            <div className="desktop-only">
+              <ItemTags tag="h2">
+                <h2>&lt;Portfolio /&gt;</h2>
+              </ItemTags>
+            </div>
+
+            <ItemTags tag="p">
+              <div className="p-container">
+                <p>
+                  {t('portfolio.portfolio.p1')} 
+                </p>
+                <p>
+                  {t('portfolio.portfolio.p2')} 
+                </p>
+                <p>
+                  {t('portfolio.portfolio.p3')} 
+                </p>
+              </div>
+            </ItemTags>
+
+            <ItemTags tag="span">
+              <div className="stacks-container">
+                <StackTag title="ReactJS" />
+                <StackTag title="Styled Components" />
+                <StackTag title="React Router Dom" />
+                <StackTag title="CSS in JS" />
+                <StackTag title="Figma" />
+              </div>
+            </ItemTags>
+
+            <ItemTags tag="ul">
+              <ul>
+                <li>
+                  &gt; <a href="https://github.com/jessicaranft/portfolio" target="_blank">{t('portfolio.portfolio.link')}</a>
+                </li>
+              </ul>
+            </ItemTags>
+
+          </div>
+
+        </PortfolioItem>
 
         <PortfolioItem>
           <div className="grid-text">
