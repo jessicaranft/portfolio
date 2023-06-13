@@ -31,7 +31,7 @@ export function Contact() {
         </ItemTags>
 
         <ItemTags tag="form">
-          <form name="contact" method="POST">
+          <form name="contact" method="POST" action="/thank-you">
             <input type="hidden" name="form-name" value="contact" />
             <label htmlFor="name" className="sr-only">{t('contact.formName')}</label>
             <Input type="text" name="name" placeholder={t('contact.formName')} />

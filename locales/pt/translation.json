@@ -75,5 +75,9 @@
     "formEmail": "Seu e-mail",
     "formMessage": "Sua mensagem",
     "formButton": "Enviar mensagem"
+  },
+  "thankYou": {
+    "h2": "Obrigada pela mensagem!",
+    "text": "Sua mensagem foi enviada com sucesso, e responderei o mais breve possível."
   }
 }
