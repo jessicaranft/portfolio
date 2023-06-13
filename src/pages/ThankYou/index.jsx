@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
 
-import { Container, Main, Input, Button, Textarea } from './styles';
+import { Container, Main } from './styles';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { ItemTags } from '../../components/ItemTags';
