@@ -209,6 +209,11 @@ export function About() {
               <ItemTags tag="h2">
                 <h2>{t('about.skills')}</h2>
               </ItemTags>
+              <ItemTags tag="p">
+                <p>
+                  {t('about.skillsText')}
+                </p>
+              </ItemTags>
             </div>
 
         </Main>

@@ -21,6 +21,7 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
     border-top: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
     border-bottom: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
+    margin-top: -3.2rem;
   }
 
   .swiper-container {

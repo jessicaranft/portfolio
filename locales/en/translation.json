@@ -18,27 +18,28 @@
     "birthdayContent": "13 April",
     "nationalityTitle": "Nationality",
     "nationalityContent": "Brazil/United Kingdom",
-    "studyTitle": "Study",
+    "studyTitle": "Education",
     "studyContent": "System Analysis and Development",
     "interestTitle": "Interest",
     "interestContent": "Playing classical piano",
     "summary": "Summary",
     "howItStarted": "How it started",
-    "toThisDate": "Actual days",
+    "toThisDate": "Nowadays",
     "workStyle": "My work style",
     "teamPlayer": "Team playing",
     "workWithMe": "Work with me",
     "skills": "Skills",
+    "skillsText": "My main web development skills are shown below:",
     "p1": "Hi, my name is Jessica Ranft, and I'm a Front-End Web Developer based in Brasília - Brazil.",
     "p2": "My passion for web development started as a young teenager when I first discovered websites. They absolutely amazed me, and I decided that I would learn to create my own website, no matter what. I learned HTML and CSS by myself studying the source code from other websites and started creating and publishing my first websites in the early 2000s.",
     "p3": "A few years later, I landed my first freelance job as a web designer, and that was my first job ever. I continued working with website creation and maintenance throughout all my student years.",
-    "p4": "After university, I stopped working with websites and started working as a piano teacher (my university course was music, focused on classical piano). I kept teaching piano until I discovered that, while I love music and piano, my real professional passion is in the technology area.",
-    "p5": "I then decided to start a course about web development to update myself with the latest technologies, and also to \"formerly educate\" myself in HTML, CSS, JavaScript, and all the other languages and technologies involved.",
+    "p4": "After graduating from university with a Bachelor's Degree in Classical Piano, I stopped working with websites and started working as a piano teacher. I continued teaching piano until I discovered that, while I love music and piano, my real professional passion is in the technology area.",
+    "p5": "I then decided to start a course in Web Development to update myself with the latest technologies, and also to \"formerly\" educate myself in HTML, CSS, JavaScript, and all the other languages and technologies involved.",
     "p6": "My approach to every project is to plan carefully every step of the way with my clients, understand their needs, and deliver the most professional result as possible. I'm committed to delivering high-quality results that exceed the client's expectations and achieve their objectives.",
-    "p7": "In addition to my technical skills, I pride myself on being highly attentive to details and committed to my job, which allows me to deliver a beautiful and harmonious looking layout focused on the features that are important to the client's business.",
+    "p7": "In addition to my technical skills, I pride myself on being highly attentive to details and committed to my job, which allows me to deliver a beautiful and harmonious-looking layout focused on the features that are important to the client's business.",
     "p8": "I also believe in fostering strong relationships with my clients and colleagues, and I'm always willing to go the extra mile to ensure their success. I'm a strong collaborator and team player, with excellent communication skills that allow me to collaborate effectively with clients and colleagues alike.",
     "p9": "My ability to work collaboratively and communicate effectively ensures that projects run smoothly and that all stakeholders are kept informed and engaged throughout the development process. I believe that building strong relationships is key to achieving successful outcomes, and I always strive to foster a positive and productive working environment.",
-    "p10": "If you're looking for a Front-End Web Developer who is enthusiastic, fast-learning and detailed-oriented, please don't hesitate to contact me. I'm excited to learn more about your needs and/or your client's, and how I can help you achieve your/their goals."
+    "p10": "If you're looking for a Front-End Web Developer who is enthusiastic, fast-learning and detailed-oriented, please don't hesitate to contact me. I'll be excited to learn more about your needs and/or your client's, and how I can help you achieve your/their goals."
   },
   "portfolio": {
     "imageText": "Click image to expand",
@@ -69,7 +70,7 @@
       "link": "GitHub repository"
     },
     "personalenglish": {
-      "p1": "This is a landing page for online private English lessons, with the purpose of calling people to sign-up for a waiting list. The page provides a full description of the lessons and teacher and has a sign-up form where people can register to join the waiting list.",
+      "p1": "This is a landing page for online private English lessons, with the purpose of inviting people to sign-up for a waiting list. The page provides a full description of the lessons and the teacher and has a sign-up form where people can register to join the waiting list.",
       "p2": "The layout was created using the combo WordPress + Elementor Pro.",
       "p3": "The layout is fully responsive with mobile, tablet and desktop versions.",
       "link": "Live page"
