@@ -24,6 +24,30 @@ export function Contact() {
     const form = document.getElementById("form");
     const formData = new FormData(form);
 
+    if (form.elements["name"].value.trim() === "") {
+      form.elements["name"].style.border = "1px solid red";
+      form.elements["name"].addEventListener("input", function () {
+        form.elements["name"].style.border = "";
+      });
+      return;
+    }
+
+    if (form.elements["email"].value.trim() === "") {
+      form.elements["email"].style.border = "1px solid red";
+      form.elements["email"].addEventListener("input", function () {
+        form.elements["email"].style.border = "";
+      });
+      return;
+    }
+
+    if (form.elements["message"].value.trim() === "") {
+      form.elements["message"].style.border = "1px solid red";
+      form.elements["message"].addEventListener("input", function () {
+        form.elements["message"].style.border = "";
+      });
+      return;
+    }
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
