@@ -47,8 +47,10 @@ export const Main = styled.main`
 `;
 
 export const PortfolioItem = styled.div`
+  width: 100%;
   display: flex;
-  gap: 5.6rem;
+  flex-direction: column;
+  gap: 3.6rem;
 
   max-width: 1224px;
   margin: auto;
@@ -65,8 +67,8 @@ export const PortfolioItem = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
   }
 
-  .preview-thumb {
-    width: 42rem;
+  .preview-image {
+    width: 100%;
   }
 
   .small-text {
@@ -74,29 +76,8 @@ export const PortfolioItem = styled.div`
     text-align: center;
   }
 
-  img {
-    transition: filter 0.3s;
-    cursor: pointer;
-  }
-
-  img:hover {
-    filter: brightness(0.5);
-  }
-
-  .grid-text {
-    align-self: center;
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-  }
-
-  .grid-image {
-    align-self: center;
-    justify-content: right;
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
+  .date-text {
+    font-size: 1.4rem;
   }
 
   .p-container {
@@ -114,23 +95,6 @@ export const PortfolioItem = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
     gap: 3.2rem;
-
-    .grid-image {
-      width: 100%;
-      gap: 3.2rem;
-    }
-
-    img {
-      width: 100%;
-      transition: none;
-      cursor: default;
-    }
-
-    img:hover {
-      filter: none;
-    }
   }
 `;

@@ -42,7 +42,25 @@
     "p10": "If you're looking for a Front-End Web Developer who is enthusiastic, fast-learning and detailed-oriented, please don't hesitate to contact me. I'll be excited to learn more about your needs and/or your client's, and how I can help you achieve your/their goals."
   },
   "portfolio": {
-    "imageText": "Click image to expand",
+    "thumbAltText": "Click here to enlarge this image",
+    "createdAt": "Published on:",
+    "foodexplorer": {
+      "p1": "FoodExplorer is an interactive menu for a restaurant. It's a full-stack web app that I've developed for my final project in a Web Developer bootcamp.",
+      "p2": "It has two types of user: an admin, and a standard user. The admin can create, view, edit, and remove dishes. They can also view all the orders created by all users, and change their status. The standard user can view all the dishes created by the admin and create, edit, and finish an order, and favorite any dish.",
+      "p3": "The layout was based on a Figma prototype created by a web designer.",
+      "p4": "I developed the front-end with React, and the back-end with Node and SQLite.",
+      "p5": "I also developed this web app with the mobile-first concept, and it is fully responsive.",
+      "p6": "If you want to try the application, you can create your own user. Alternativerly, you can user the credentials below which I used for testing:",
+      "link": "GitHub repository",
+      "pass": "Password"
+    },
+    "conexaobritanica": {
+      "p1": "Conexão Britânica is a WordPress blog about English learning for Portuguese speakers.",
+      "p2": "In this blog, I created the layout using Figma, and then converted it to a WordPress + Elementor Pro website.",
+      "p3": "The brand concept was designed by a graphic designer, so my purpose for this layout was to use the brand colors and concept on a simple, clean layout.",
+      "p4": "The blog is fully responsive for mobile, desktop, and tablet.",
+      "link": "Live blog"
+    },
     "portfolio": {
       "p1": "This portfolio was designed by me on Figma and developed with React.",
       "p2": "My idea for the design was to create a \"coding\" theme, with elements that resemble coding tags and styles that we use in front-end development.",

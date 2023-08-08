@@ -42,7 +42,25 @@
     "p10": "Se você está procurando por uma Desenvolvedora Front-End que tem paixão pelo trabalho, aprende rápido e é orientada a detalhes, entre em contato comigo! Ficarei feliz em saber mais sobre suas necessidades como cliente ou empresa contratante, e em como posso ajudar você a atingir seus objetivos."
   },
   "portfolio": {
-    "imageText": "Clique na imagem para expandir",
+    "thumbAltText": "Clique aqui para expandir a imagem",
+    "createdAt": "Publicado em:",
+      "foodexplorer": {
+      "p1": "FoodExplorer é um menu interativo para um restaurante. É um aplicativo full-stack que eu desenvolvi para o projeto final do meu curso de Desenvolvimento Web.",
+      "p2": "Ele possui duas personas: um admin e um usuário comum. O admin pode criar, visualizar, editar e remover pratos. Ele pode também visualizar todos os pedidos de todos os usuários e mudar o status de cada um. O usuário comum pode visualizar todos os pratos criados pelo admin e criar, editar, e finalizar um pedido, além de adicionar pratos aos favoritos.",
+      "p3": "O layout foi baseado em um protótipo no Figma criado por um web designer.",
+      "p4": "Eu desenvolvi o front-end em React e o back-end em Node e SQLite.",
+      "p5": "Além disso, desenvolvi esse aplicativo utilizando o conceito de mobile-first, e ele é totalmente responsivo.",
+      "p6": "Se você quiser experimentar o aplicativo, pode criar seu próprio usuário. Se preferir, use as credenciais abaixo que eu utilizei para fazer os testes:",
+      "link": "Repositório no GitHub",
+      "pass": "Senha"
+    },
+    "conexaobritanica": {
+      "p1": "O Conexão Britânica é um blog WordPress sobre o aprendizado de inglês para falantes do português.",
+      "p2": "Nesse blog, eu criei o layout utilizando o Figma, e converti para um site em WordPress + Elementor Pro.",
+      "p3": "O conceito da marca foi criada por um designer gráfico, por isso minha proposta para esse layout foi utilizar as cores e o conceito em um layout simples e limpo.",
+      "p4": "O blog é 100% responsivo para mobile, desktop e tablet.",
+      "link": "Blog no ar"
+    },
     "portfolio": {
       "p1": "Este portfólio foi projetado por mim no Figma, e desenvolvido com React.",
       "p2": "Minha ideia para o design era criar um tema de \"codificação\", com elementos que lembram tags e estilos que usamos no desenvolvimento front-end.",
@@ -60,7 +78,7 @@
       "p2": "Como o layout anterior foi criado com WordPress + Elementor Pro, e também para uma rápida entrega e pela quantidade de conteúdo na página, optei por manter esse combo de ferramentas.",
       "p3": "Criei o layout usando o Figma, com a intenção de usar as cores da marca e ter uma seção hero grande e chamativa.",
       "p4": "O layout é completamente responsivo, com versões mobile, tablet e desktop.",
-      "link": "Página ao vivo"
+      "link": "Página no ar"
     },
     "focustimer": {
       "p1": "Esse foi o meu primeiro projeto reunindo HTML, CSS e Javascript de uma só vez.",
@@ -73,7 +91,7 @@
       "p1": "Essa é uma landing page para aulas particulares de inglês, com o propósito de convidar pessoas a entrarem para uma lista de espera. A página fornece uma descrição completa sobre as aulas e o professor, e possui um formulário de cadastro para o usuário entrar para a lista de espera.",
       "p2": "O layout foi criado usando o combo de ferramentas WordPress + Elementor Pro.",
       "p3": "Ele é totalmente responsivo, com versões mobile, tablet e desktop.",
-      "link": "Página ao vivo"
+      "link": "Página no ar"
     }
   },
   "contact": {
