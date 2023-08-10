@@ -1,9 +1,5 @@
-import { Container } from './styles';
+import { Container } from './styles'
 
-export function StackTag({ title, ...rest }) {
-  return (
-    <Container {...rest}>
-     {title}
-    </Container>
-  );
+export function StackTag({ stackName, ...rest }) {
+  return <Container {...rest}>{stackName}</Container>
 }

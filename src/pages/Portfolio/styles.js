@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1440px;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 
 export const Main = styled.main`
   width: 100%;
@@ -44,7 +44,7 @@ export const Main = styled.main`
       flex-direction: column;
     }
   }
-`;
+`
 
 export const PortfolioItem = styled.div`
   width: 100%;
@@ -91,10 +91,10 @@ export const PortfolioItem = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
-    padding: .4rem 0;
+    padding: 0.4rem 0;
   }
 
   @media only screen and (max-width: 768px) {
     gap: 3.2rem;
   }
-`;
+`
