@@ -1,45 +1,44 @@
-import { useState, useEffect } from 'react';
-import { FiDownload } from 'react-icons/fi';
-import { TypeAnimation } from 'react-type-animation';
-import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react'
+import { FiDownload } from 'react-icons/fi'
+import { TypeAnimation } from 'react-type-animation'
+import { useTranslation } from 'react-i18next'
 
-import { Container, Main } from './styles';
-import { Header} from '../../components/Header';
-import { Footer } from '../../components/Footer';
-import { ItemTags } from '../../components/ItemTags';
-import hero from '../../assets/hero.png';
+import { Container, Main } from './styles'
+import { Header } from '../../components/Header'
+import { Footer } from '../../components/Footer'
+import { ItemTags } from '../../components/ItemTags'
+import hero from '../../assets/hero.png'
 
 export function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   const TranslatedTypeAnimation = ({ sequence, ...rest }) => {
-    const { t } = useTranslation();
-    const translatedSequence = sequence.map((text) => t(text));
+    const { t } = useTranslation()
+    const translatedSequence = sequence.map((text) => t(text))
 
-    return <TypeAnimation sequence={translatedSequence} {...rest} />;
-  };
+    return <TypeAnimation sequence={translatedSequence} {...rest} />
+  }
 
   const DelayedTypeAnimation = ({ sequence, delay, ...rest }) => {
-    const [isReady, setisReady] = useState(false);
-  
+    const [isReady, setisReady] = useState(false)
+
     useEffect(() => {
       const timer = setTimeout(() => {
-        setisReady(true);
-      }, delay);
-  
-      return () => clearTimeout(timer);
-    }, [delay]);
+        setisReady(true)
+      }, delay)
 
-    const translatedSequence = sequence.map((text) => t(text));
+      return () => clearTimeout(timer)
+    }, [delay])
 
-    return isReady? (
+    const translatedSequence = sequence.map((text) => t(text))
+
+    return isReady ? (
       <TypeAnimation sequence={translatedSequence} {...rest} />
-    ) : null;
-  };
+    ) : null
+  }
 
   return (
     <Container>
-
       <Header />
 
       <Main>
@@ -81,20 +80,30 @@ export function Home() {
 
           <div className="button-container">
             <ItemTags tag="button">
-              <a href="https://drive.google.com/file/d/1SlG7AvVGYXL-b2VBiHVE0L6WxWJBDkWc/view?usp=sharing" target="_blank">
-                <button>{t('home.downloadButton')}<FiDownload /></button>
+              <a
+                href="https://drive.google.com/file/d/1uh7gFxPa1vkaJKV7LlXa0zk2T3eyFpvN/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>
+                  {t('home.downloadButton')}
+                  <FiDownload />
+                </button>
               </a>
             </ItemTags>
           </div>
-
         </div>
 
         <div>
-          <img src={hero} alt="a drawing of a laptop in pixel art style" className="hero" />
+          <img
+            src={hero}
+            alt="a drawing of a laptop in pixel art style"
+            className="hero"
+          />
         </div>
       </Main>
 
       <Footer />
     </Container>
-  );
+  )
 }
