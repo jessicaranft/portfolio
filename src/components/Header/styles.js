@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -93,7 +93,7 @@ export const Container = styled.div`
       }
     }
   }
-`;
+`
 
 export const Branding = styled.div`
   a {
@@ -102,12 +102,16 @@ export const Branding = styled.div`
     font-weight: 700;
     color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
   }
-`;
+`
 
 export const Menu = styled.ul`
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  .active {
+    font-weight: bold;
   }
 
   ul {
@@ -116,14 +120,14 @@ export const Menu = styled.ul`
     display: flex;
     gap: 5.6rem;
   }
-`;
+`
 
 export const Languages = styled.div`
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
 
   button {
-    padding: .6rem;
+    padding: 0.6rem;
     background: none;
     border: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
@@ -132,4 +136,4 @@ export const Languages = styled.div`
   button.selected {
     border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   }
-`;
+`

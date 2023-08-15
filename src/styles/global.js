@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import background from '../assets/background.svg';
+import { createGlobalStyle } from 'styled-components'
+import background from '../assets/background.svg'
 
 export default createGlobalStyle`
   * {
@@ -92,4 +92,4 @@ export default createGlobalStyle`
       display: block;
     }
   }
-`;
+`

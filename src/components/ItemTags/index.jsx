@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container } from './styles'
 
 export function ItemTags({ tag, children }) {
   return (
@@ -7,5 +7,5 @@ export function ItemTags({ tag, children }) {
       {children}
       <p className="html-tags">&lt;/{tag}&gt;</p>
     </Container>
-  );
+  )
 }

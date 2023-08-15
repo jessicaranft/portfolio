@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -40,7 +40,7 @@ export const Container = styled.div`
     align-items: center;
     gap: 1.6rem;
   }
-  
+
   .slide-container img {
     width: 12rem;
     height: 12rem;
@@ -51,8 +51,8 @@ export const Container = styled.div`
     height: 100%;
 
     .container {
-    max-width: 100%;
-    margin: auto;
+      max-width: 100%;
+      margin: auto;
     }
 
     .section-title {
@@ -83,7 +83,7 @@ export const Container = styled.div`
       height: 5.6rem;
     }
   }
-`;
+`
 
 export const Main = styled.main`
   width: 100%;
@@ -115,7 +115,7 @@ export const Main = styled.main`
   .top-container p {
     line-height: 3.6rem;
   }
-  
+
   .about-img {
     width: 12.4rem;
     height: 12.4rem;
@@ -155,11 +155,10 @@ export const Main = styled.main`
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-rows: auto;
-    grid-row-gap: .4rem;
+    grid-row-gap: 0.4rem;
   }
-`;
+`
 
-/*
 export const Summary = styled.ul`
   list-style: none;
   display: flex;
@@ -173,5 +172,4 @@ export const Summary = styled.ul`
   li a {
     color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
   }
-`;
-*/
+`

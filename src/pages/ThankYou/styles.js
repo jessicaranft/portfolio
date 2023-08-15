@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1440px;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 
 export const Main = styled.main`
   width: 100%;
@@ -36,4 +36,4 @@ export const Main = styled.main`
     padding: 0 2.4rem;
     margin: 3.6rem auto;
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1440px;
@@ -25,7 +25,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 
 export const Main = styled.main`
   width: 100%;
@@ -48,7 +48,7 @@ export const Main = styled.main`
     padding: 0 2.4rem;
     margin: 3.6rem auto;
   }
-`;
+`
 
 export const Input = styled.input`
   width: 100%;
@@ -61,7 +61,7 @@ export const Input = styled.input`
 
   display: flex;
   align-items: center;
-`;
+`
 
 export const Textarea = styled.textarea`
   width: 100%;
@@ -71,7 +71,7 @@ export const Textarea = styled.textarea`
   border: none;
   padding: 1.6rem 2.4rem;
   margin-bottom: 3.6rem;
-`;
+`
 
 export const Button = styled.button`
   width: 22.8rem;
@@ -90,4 +90,4 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.COLORS.WHITE};
     border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   }
-`;
+`

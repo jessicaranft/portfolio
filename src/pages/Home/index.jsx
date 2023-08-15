@@ -4,8 +4,6 @@ import { TypeAnimation } from 'react-type-animation'
 import { useTranslation } from 'react-i18next'
 
 import { Container, Main } from './styles'
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
 import { ItemTags } from '../../components/ItemTags'
 import hero from '../../assets/hero.png'
 
@@ -39,8 +37,6 @@ export function Home() {
 
   return (
     <Container>
-      <Header />
-
       <Main>
         <div className="main-content">
           <div className="p-wrapper">
@@ -102,8 +98,6 @@ export function Home() {
           />
         </div>
       </Main>
-
-      <Footer />
     </Container>
   )
 }

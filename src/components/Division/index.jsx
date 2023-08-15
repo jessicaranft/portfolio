@@ -7,5 +7,5 @@ export function Division() {
       <div></div>
       <div></div>
     </Container>
-  );
+  )
 }

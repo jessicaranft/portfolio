@@ -1,11 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom'
 
-import { AppRoutes } from './app.routes';
+import { AppRoutes } from './app.routes'
 
 export function Routes() {
-  return(
+  return (
     <BrowserRouter>
       <AppRoutes />
     </BrowserRouter>
-  );
+  )
 }

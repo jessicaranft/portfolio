@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1440px;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
+`
 
 export const Main = styled.main`
   width: 100%;
@@ -66,8 +66,8 @@ export const Main = styled.main`
   }
 
   .button-container a {
-      text-decoration: none;
-    }
+    text-decoration: none;
+  }
 
   @media only screen and (max-width: 768px) {
     display: flex;
@@ -81,7 +81,6 @@ export const Main = styled.main`
     }
     .p-wrapper {
       min-height: 36px;
-
     }
 
     .h1-wrapper {
@@ -108,6 +107,6 @@ export const Main = styled.main`
     .hero {
       max-width: 28.1rem;
       margin: auto;
+    }
   }
-  }
-`;
+`

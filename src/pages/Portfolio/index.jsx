@@ -2,8 +2,6 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
 import { Container, Main } from './styles'
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
 import { ItemTags } from '../../components/ItemTags'
 import { Division } from '../../components/Division'
 
@@ -15,8 +13,6 @@ export function Portfolio() {
 
   return (
     <Container>
-      <Header />
-
       <Main>
         <ItemTags tag="h1">
           <TypeAnimation
@@ -42,8 +38,6 @@ export function Portfolio() {
           </React.Fragment>
         ))}
       </Main>
-
-      <Footer />
     </Container>
   )
 }
