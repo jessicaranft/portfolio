@@ -50,9 +50,8 @@
       "p3": "The layout was based on a Figma prototype created by a web designer.",
       "p4": "I developed the front-end with React, and the back-end with Node and SQLite.",
       "p5": "I also developed this web app with the mobile-first concept, and it is fully responsive.",
-      "p6": "If you want to try the application, you can create your own user. Alternativerly, you can user the credentials below which I used for testing:",
-      "link": "GitHub repository",
-      "pass": "Password"
+      "p6": "If you want to try the application, you can create your own user. Alternativerly, you can user the credentials which I used for testing. Please check the GitHub repository link below for more details.",
+      "link": "GitHub repository"
     },
     "conexaobritanica": {
       "p1": "Conexão Britânica is a WordPress blog about English learning for Portuguese speakers.",
@@ -70,8 +69,7 @@
     "rocketmovies": {
       "p1": "RocketMovies is a React web app where you can create an account and register information about movies you've watched, and search through your movie database.",
       "p2": "The layout design was created by Rocketseat, and the app is currently only in Portuguese.",
-      "p3": "If you'd like to try the demo, you can use the credentials below. They will allow you to navigate through all pages of the app, and see movies already registered in the database. Please feel free to register your own user as well:",
-      "p4": "Password"
+      "p3": "If you'd like to try the demo, you can use the credentials I used for testing. They will allow you to navigate through all pages of the app, and see movies already registered in the database. Feel free to register your own user as well. Please check the GitHub repository link below for more details."
     },
     "englishtravel": {
       "p1": "This is a landing page for an online travel English language course, with the purpose of providing all the information about the course and CTA to the checkout page.",

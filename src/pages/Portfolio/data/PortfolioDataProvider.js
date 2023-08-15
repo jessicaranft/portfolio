@@ -23,7 +23,6 @@ export function PortfolioDataProvider() {
           t('portfolio.foodexplorer.p4'),
           t('portfolio.foodexplorer.p5'),
           t('portfolio.foodexplorer.p6'),
-          t('portfolio.foodexplorer.pass'),
         ],
         stacks: [
           'ReactJS',

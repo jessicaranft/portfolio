@@ -32,25 +32,21 @@ export function PortfolioItem({
       </div>
 
       <ItemTags tag="p">
-        <div className="p-container">
-          <ul>
-            {description.map((p, index) => (
-              <li key={index}>{p}</li>
-            ))}
-          </ul>
-        </div>
+        <ul className="p-container">
+          {description.map((p, index) => (
+            <li key={index}>{p}</li>
+          ))}
+        </ul>
       </ItemTags>
 
       <ItemTags tag="span">
-        <div className="stacks-container">
-          <ul>
-            {stacks.map((stack, index) => (
-              <li key={index}>
-                <StackTag stackName={stack} />
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="stacks-container">
+          {stacks.map((stack, index) => (
+            <li key={index}>
+              <StackTag stackName={stack} />
+            </li>
+          ))}
+        </ul>
       </ItemTags>
 
       <ItemTags tag="ul">
