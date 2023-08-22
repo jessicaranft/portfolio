@@ -14,11 +14,27 @@ export function MobileMenu() {
     setSelectedLanguage(lng)
   }
 
+  function handleMenuClose() {
+    const openMenu = document.getElementById('open-menu')
+    const closeMenu = document.getElementById('close-menu')
+    const menu = document.getElementById('menu')
+
+    menu.classList.remove('slide-in')
+    menu.classList.add('slide-out')
+    openMenu.classList.remove('hide')
+    closeMenu.classList.add('hide')
+    setTimeout(() => {
+      menu.classList.add('hide')
+    }, 700)
+  }
+
   return (
     <Container>
       <header>
         <Branding>
-          <Link to="/">J_</Link>
+          <Link to="/" onClick={handleMenuClose}>
+            J_
+          </Link>
         </Branding>
       </header>
 
@@ -41,13 +57,19 @@ export function MobileMenu() {
 
           <ul>
             <li>
-              <NavLink to="/about">&lt;{t('menu.about')} /&gt;</NavLink>
+              <NavLink to="/about" onClick={handleMenuClose}>
+                &lt;{t('menu.about')} /&gt;
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio">&lt;{t('menu.portfolio')} /&gt;</NavLink>
+              <NavLink to="/portfolio" onClick={handleMenuClose}>
+                &lt;{t('menu.portfolio')} /&gt;
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">&lt;{t('menu.contact')} /&gt;</NavLink>
+              <NavLink to="/contact" onClick={handleMenuClose}>
+                &lt;{t('menu.contact')} /&gt;
+              </NavLink>
             </li>
           </ul>
 
