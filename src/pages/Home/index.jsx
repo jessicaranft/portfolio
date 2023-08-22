@@ -3,7 +3,7 @@ import { FiDownload } from 'react-icons/fi'
 import { TypeAnimation } from 'react-type-animation'
 import { useTranslation } from 'react-i18next'
 
-import { Container, Main } from './styles'
+import { Container } from './styles'
 import { ItemTags } from '../../components/ItemTags'
 import hero from '../../assets/hero.png'
 
@@ -37,67 +37,65 @@ export function Home() {
 
   return (
     <Container>
-      <Main>
-        <div className="main-content">
-          <div className="p-wrapper">
-            <ItemTags tag="p">
-              <TranslatedTypeAnimation
-                sequence={[t('home.p')]}
-                cursor={false}
-                repeat={1}
-                wrapper={'p'}
-              />
-            </ItemTags>
-          </div>
-
-          <div className="h1-wrapper">
-            <ItemTags tag="h1">
-              <DelayedTypeAnimation
-                sequence={['Jessica Ranft']}
-                cursor={false}
-                repeat={1}
-                wrapper={'h1'}
-                delay={1000}
-              />
-            </ItemTags>
-          </div>
-
-          <div className="h2-wrapper">
-            <ItemTags tag="h2">
-              <DelayedTypeAnimation
-                sequence={[t('home.h2')]}
-                cursor={true}
-                repeat={1}
-                wrapper={'h2'}
-                delay={2000}
-              />
-            </ItemTags>
-          </div>
-
-          <div className="button-container">
-            <ItemTags tag="button">
-              <a
-                href="https://drive.google.com/file/d/1uh7gFxPa1vkaJKV7LlXa0zk2T3eyFpvN/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button>
-                  {t('home.downloadButton')}
-                  <FiDownload />
-                </button>
-              </a>
-            </ItemTags>
-          </div>
+      <div className="main-content">
+        <div className="p-wrapper">
+          <ItemTags tag="p">
+            <TranslatedTypeAnimation
+              sequence={[t('home.p')]}
+              cursor={false}
+              repeat={1}
+              wrapper={'p'}
+            />
+          </ItemTags>
         </div>
 
-        <div>
-          <img
-            src={hero}
-            alt="a drawing of a laptop in pixel art style"
-            className="hero"
-          />
+        <div className="h1-wrapper">
+          <ItemTags tag="h1">
+            <DelayedTypeAnimation
+              sequence={['Jessica Ranft']}
+              cursor={false}
+              repeat={1}
+              wrapper={'h1'}
+              delay={1000}
+            />
+          </ItemTags>
         </div>
-      </Main>
+
+        <div className="h2-wrapper">
+          <ItemTags tag="h2">
+            <DelayedTypeAnimation
+              sequence={[t('home.h2')]}
+              cursor={true}
+              repeat={1}
+              wrapper={'h2'}
+              delay={2000}
+            />
+          </ItemTags>
+        </div>
+
+        <div className="button-container">
+          <ItemTags tag="button">
+            <a
+              href="https://drive.google.com/file/d/1uh7gFxPa1vkaJKV7LlXa0zk2T3eyFpvN/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>
+                {t('home.downloadButton')}
+                <FiDownload />
+              </button>
+            </a>
+          </ItemTags>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src={hero}
+          alt="a drawing of a laptop in pixel art style"
+          className="hero"
+        />
+      </div>
     </Container>
   )
 }

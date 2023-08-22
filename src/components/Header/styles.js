@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  max-width: 1440px;
   height: 13.2rem;
 
   display: flex;
@@ -112,6 +113,8 @@ export const Menu = styled.ul`
 
   .active {
     font-weight: bold;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.WHITE};
   }
 
   ul {

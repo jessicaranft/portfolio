@@ -1,32 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  max-width: 1440px;
-  min-height: 100vh;
-
-  margin: auto;
-
-  display: flex;
-  flex-direction: column;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-  }
-`
-
-export const Main = styled.main`
+export const Container = styled.main`
   width: 100%;
   height: auto;
-  padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
-  padding-right: clamp(3rem, 5rem + 2vw, 15.6rem);
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  flex-grow: 1;
-  min-height: 50vh;
 
   button {
     background: none;
@@ -42,7 +22,7 @@ export const Main = styled.main`
   }
 
   .hero {
-    max-width: 65rem;
+    max-width: 60rem;
     margin-left: -7.2rem;
   }
 
@@ -74,11 +54,11 @@ export const Main = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5.6rem 2.4rem;
 
     .main-content {
       min-width: auto;
     }
+
     .p-wrapper {
       min-height: 36px;
     }

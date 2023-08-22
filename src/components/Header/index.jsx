@@ -46,13 +46,8 @@ export function Header() {
     function closeMenuOutsideClick(e) {
       const menu = document.getElementById('menu')
       const openMenu = document.getElementById('open-menu')
-      const closeMenu = document.getElementById('close-menu')
 
-      if (
-        !menu.contains(e.target) &&
-        !openMenu.contains(e.target) &&
-        !closeMenu.contains(e.target)
-      ) {
+      if (!menu.contains(e.target) && !openMenu.contains(e.target)) {
         handleMenuClose()
       }
     }
