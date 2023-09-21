@@ -44,6 +44,13 @@
   "portfolio": {
     "thumbAltText": "Click here to enlarge this image",
     "createdAt": "Published on:",
+    "githubBlog": {
+      "p1": "This is a React blog app that conects to the GitHub API to search for the repository issues & user data and display them like a blog post.",
+      "p2": "It lists my GitHub profile with avatar image, followers, name and other info, and it also lists and filter the issues from the repository with a small text preview.",
+      "p3": "It integrates with GitHub Users API, GitHub Search API and GitHub Issues API.",
+      "p4": "You can click the post/issue card, and you'll be redirected to a page containing the full issue/post.",
+      "link": "GitHub repository"
+    },
     "foodexplorer": {
       "p1": "FoodExplorer is an interactive menu for a restaurant. It's a full-stack web app that I've developed for my final project in a Web Developer bootcamp.",
       "p2": "It has two types of user: an admin, and a standard user. The admin can create, view, edit, and remove dishes. They can also view all the orders created by all users, and change their status. The standard user can view all the dishes created by the admin and create, edit, and finish an order, and favorite any dish.",

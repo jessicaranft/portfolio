@@ -7,12 +7,48 @@ import previewEnglishTravel from '../../../assets/portfolio/englishtravel.png'
 import previewFocusTimer from '../../../assets/portfolio/focustimer.png'
 import previewPersonalEnglish from '../../../assets/portfolio/personalenglish.png'
 import previewPortfolio from '../../../assets/portfolio/portfolio.png'
+import previewGithubBlog from '../../../assets/portfolio/github-blog.png'
 
 export function PortfolioDataProvider() {
   const { t } = useTranslation()
 
   function getPortfolioData() {
     return [
+      {
+        title: '<GitHub Blog />',
+        previewImageSrc: previewGithubBlog,
+        description: [
+          t('portfolio.githubBlog.p1'),
+          t('portfolio.githubBlog.p2'),
+          t('portfolio.githubBlog.p3'),
+          t('portfolio.githubBlog.p4'),
+        ],
+        stacks: [
+          'ReactJS',
+          'TypeScript',
+          'Styled Components',
+          'React Router Dom',
+          'React Hook Form',
+          'React Markdown',
+          'Zod',
+          'Date FNS',
+          'NodeJS',
+          'HTML5',
+          'CSS in JS',
+          'API Rest',
+        ],
+        links: [
+          {
+            label: t('portfolio.foodexplorer.link'),
+            url: 'https://github.com/jessicaranft/blog',
+          },
+          {
+            label: 'Demo',
+            url: 'https://blog-flax-nu-26.vercel.app/',
+          },
+        ],
+        publishedOn: '09/2023',
+      },
       {
         title: '<Food Explorer />',
         previewImageSrc: previewFoodExplorer,

@@ -44,6 +44,13 @@
   "portfolio": {
     "thumbAltText": "Clique aqui para expandir a imagem",
     "createdAt": "Publicado em:",
+    "githubBlog": {
+      "p1": "Trata-se de um blog em React que conecta com a API do Github para buscar pelas issues do repositório e dados do usuário, e exibi-los como uma postagem de blog.",
+      "p2": "Ele lista meu perfil do Github com imagem de perfil, seguidores, nome e outras informações, e também lista e filtra as issues daquele repositório com uma pequena prévia do texto.",
+      "p3": "Ele faz integração com a GitHub Users API, GitHub Search API e GitHub Issues API.",
+      "p4": "Você pode clicar no card de postagem/issue, e será redirecionado para uma página contendo o conteúdo completo dessa postagem/issue.",
+      "link": "Repositório no GitHub"
+    },
       "foodexplorer": {
       "p1": "FoodExplorer é um menu interativo para um restaurante. É um aplicativo full-stack que eu desenvolvi para o projeto final do meu curso de Desenvolvimento Web.",
       "p2": "Ele possui duas personas: um admin e um usuário comum. O admin pode criar, visualizar, editar e remover pratos. Ele pode também visualizar todos os pedidos de todos os usuários e mudar o status de cada um. O usuário comum pode visualizar todos os pratos criados pelo admin e criar, editar, e finalizar um pedido, além de adicionar pratos aos favoritos.",
