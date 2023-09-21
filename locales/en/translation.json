@@ -45,8 +45,8 @@
     "thumbAltText": "Click here to enlarge this image",
     "createdAt": "Published on:",
     "githubBlog": {
-      "p1": "This is a React blog app that conects to the GitHub API to search for the repository issues & user data and display them like a blog post.",
-      "p2": "It lists my GitHub profile with avatar image, followers, name and other info, and it also lists and filter the issues from the repository with a small text preview.",
+      "p1": "This is a React blog app that connects to the GitHub API to search for the repository issues & user data and display them like a blog post.",
+      "p2": "It lists my GitHub profile with avatar image, followers, name and other info, and it also lists and filters the issues from the repository with a small text preview.",
       "p3": "It integrates with GitHub Users API, GitHub Search API and GitHub Issues API.",
       "p4": "You can click the post/issue card, and you'll be redirected to a page containing the full issue/post.",
       "link": "GitHub repository"
