@@ -78,9 +78,14 @@ export const Languages = styled.div`
     background: none;
     border: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
+    line-height: 0;
   }
 
   button.selected {
     border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  img {
+    width: 2.4rem;
   }
 `

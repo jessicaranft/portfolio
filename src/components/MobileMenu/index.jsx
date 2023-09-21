@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next'
 
 import { Container, Branding, Languages } from './styles'
 import { Social } from '../Social'
+import brFlag from '../../assets/br-flag.svg'
+import ukFlag from '../../assets/uk-flag.svg'
 
 export function MobileMenu() {
   const { t, i18n } = useTranslation()
@@ -45,13 +47,19 @@ export function MobileMenu() {
               onClick={() => changeLanguage('en')}
               className={selectedLanguage === 'en' ? 'selected' : ''}
             >
-              EN
+              <img
+                src={ukFlag}
+                alt="click here to change the language to english"
+              />
             </button>
             <button
               onClick={() => changeLanguage('pt')}
               className={selectedLanguage === 'pt' ? 'selected' : ''}
             >
-              PT
+              <img
+                src={brFlag}
+                alt="clique aqui para mudar o idioma para português"
+              />
             </button>
           </Languages>
 
