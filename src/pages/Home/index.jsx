@@ -76,7 +76,7 @@ export function Home() {
         <div className="button-container">
           <ItemTags tag="button">
             <a
-              href="https://drive.google.com/file/d/1uh7gFxPa1vkaJKV7LlXa0zk2T3eyFpvN/view?usp=sharing"
+              href="https://docs.google.com/document/d/1gbzcmxcJi7iGdOae9CkSQzZxwuEyVHuZVa4Ep9HfSyQ/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
