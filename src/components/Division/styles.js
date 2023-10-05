@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
 
   div {
-    background-color: ${({ theme }) => theme.COLORS.YELLOW};
+    background-color: ${({ theme }) => theme.COLORS.FONT_H1};
     width: 1.2rem;
     height: 1.2rem;
   }

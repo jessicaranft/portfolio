@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
+  border-bottom: 1px solid ${({ theme }) => theme.COLORS.DIVISION};
 
   padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
   padding-right: clamp(3rem, 5rem + 2vw, 15.6rem);
@@ -101,20 +101,20 @@ export const Branding = styled.div`
     text-decoration: none;
     font-size: 6.4rem;
     font-weight: 700;
-    color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
+    color: ${({ theme }) => theme.COLORS.LOGO};
   }
 `
 
 export const Menu = styled.ul`
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
   .active {
     font-weight: bold;
     padding-bottom: 0.8rem;
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
   ul {
@@ -133,12 +133,12 @@ export const Languages = styled.div`
     padding: 0.6rem;
     background: none;
     border: none;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
     line-height: 0;
   }
 
   button.selected {
-    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+    border: 1px solid ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
   img {

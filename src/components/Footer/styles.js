@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  border-top: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
+  border-top: 1px solid ${({ theme }) => theme.COLORS.DIVISION};
 
   padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
   padding-right: clamp(3rem, 5rem + 2vw, 15.6rem);

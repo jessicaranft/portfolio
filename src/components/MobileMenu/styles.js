@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
+  background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
 
   > header {
     display: flex;
@@ -40,7 +40,7 @@ export const Container = styled.div`
 
       ul li {
         padding: 1.6rem 0;
-        border-bottom: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
+        border-bottom: 1px solid ${({ theme }) => theme.COLORS.DIVISION};
       }
 
       li:first-child {
@@ -48,7 +48,7 @@ export const Container = styled.div`
       }
 
       a {
-        color: ${({ theme }) => theme.COLORS.WHITE};
+        color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
         text-decoration: none;
       }
 
@@ -64,7 +64,7 @@ export const Branding = styled.div`
     text-decoration: none;
     font-size: 6.4rem;
     font-weight: 700;
-    color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
+    color: ${({ theme }) => theme.COLORS.LOGO};
   }
 `
 
@@ -77,12 +77,12 @@ export const Languages = styled.div`
     padding: 0.6rem;
     background: none;
     border: none;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
     line-height: 0;
   }
 
   button.selected {
-    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+    border: 1px solid ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
   img {

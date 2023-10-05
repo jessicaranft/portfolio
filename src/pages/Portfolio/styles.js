@@ -44,7 +44,7 @@ export const PortfolioItem = styled.div`
   }
 
   ul a {
-    color: ${({ theme }) => theme.COLORS.LIGHT_GREEN};
+    color: ${({ theme }) => theme.COLORS.LOGO};
   }
 
   .preview-image {

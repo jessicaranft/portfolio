@@ -10,10 +10,10 @@ export const Container = styled.main`
 
   button {
     background: none;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
     padding: 1.8rem 4.8rem;
 
-    border: 1px solid ${({ theme }) => theme.COLORS.MEDIUM_GRAY};
+    border: 1px solid ${({ theme }) => theme.COLORS.DIVISION};
 
     display: flex;
     gap: 1.6rem;

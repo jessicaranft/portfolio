@@ -28,7 +28,7 @@ export const Container = styled.main`
 export const Input = styled.input`
   width: 100%;
   height: 5.6rem;
-  background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
+  background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
   color: ${({ theme }) => theme.COLORS.WHITE};
   border: none;
   padding: 1.6rem 2.4rem;
@@ -41,8 +41,8 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
   width: 100%;
   height: 20rem;
-  background-color: ${({ theme }) => theme.COLORS.DARK_GREEN};
-  color: ${({ theme }) => theme.COLORS.WHITE};
+  background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
+  color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   border: none;
   padding: 1.6rem 2.4rem;
   margin-bottom: 3.6rem;
@@ -52,8 +52,8 @@ export const Button = styled.button`
   width: 22.8rem;
   height: 5.6rem;
 
-  background-color: ${({ theme }) => theme.COLORS.WHITE};
-  color: ${({ theme }) => theme.COLORS.MEDIUM_GREEN};
+  background-color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
+  color: ${({ theme }) => theme.COLORS.BG_PRIMARY};
   border: none;
 
   display: flex;
@@ -61,8 +61,8 @@ export const Button = styled.button`
   justify-content: center;
 
   &:hover {
-    background-color: ${({ theme }) => theme.COLORS.MEDIUM_GREEN};
-    color: ${({ theme }) => theme.COLORS.WHITE};
-    border: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.BG_PRIMARY};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
+    border: 1px solid ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 `

@@ -5,6 +5,6 @@ export const Container = styled.div`
   gap: 2.4rem;
 
   a {
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 `

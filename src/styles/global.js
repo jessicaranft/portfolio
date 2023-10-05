@@ -28,13 +28,14 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.MEDIUM_GREEN};
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.BG_PRIMARY};
+    color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
   body, input, button, textarea {
     font-family: 'Fira Code', monospace;
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
@@ -53,7 +54,7 @@ export default createGlobalStyle`
   h1 {
     font-size: 7.2rem;
     font-weight: 700;
-    color: ${({ theme }) => theme.COLORS.YELLOW};
+    color: ${({ theme }) => theme.COLORS.FONT_H1};
 
     margin: -1rem 0;
 
@@ -62,7 +63,7 @@ export default createGlobalStyle`
   h2 {
     font-size: 3.6rem;
     font-weight: 600;
-    color: ${({ theme }) => theme.COLORS.PINK};
+    color: ${({ theme }) => theme.COLORS.FONT_H2};
 
     margin: -.4rem 0;
   }
