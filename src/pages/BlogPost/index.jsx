@@ -49,7 +49,7 @@ export function BlogPost() {
         <PostContentContainer>
           <button onClick={handleBack}>
             <MdArrowBackIosNew />
-            Go back
+            Voltar
           </button>
 
           <h1
@@ -58,8 +58,8 @@ export function BlogPost() {
 
           <PostDetailsContainer>
             <span>
-              {format(new Date(postContent.modified), 'dd/MMM/yyyy')} at{' '}
-              {format(new Date(postContent.modified), 'hh:mm bb')}
+              {format(new Date(postContent.modified), 'dd/MM/yyyy')} às{' '}
+              {format(new Date(postContent.modified), 'HH:mm')}
             </span>
             <span className="desktop-only">|</span>
             <div>

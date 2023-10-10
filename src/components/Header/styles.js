@@ -141,6 +141,11 @@ export const Languages = styled.div`
     border: 1px solid ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   }
 
+  button:disabled {
+    filter: opacity(0.3);
+    cursor: not-allowed;
+  }
+
   img {
     width: 2.4rem;
   }

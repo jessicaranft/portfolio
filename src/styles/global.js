@@ -40,6 +40,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: underline;
+    color: ${({ theme }) => theme.COLORS.LOGO};
   }
 
   button, a {

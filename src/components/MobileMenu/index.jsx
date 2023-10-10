@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { Container, Branding, Languages } from './styles'
@@ -10,6 +10,8 @@ import ukFlag from '../../assets/uk-flag.svg'
 export function MobileMenu() {
   const { t, i18n } = useTranslation()
   const [selectedLanguage, setSelectedLanguage] = useState(null)
+
+  const location = useLocation()
 
   function changeLanguage(lng) {
     i18n.changeLanguage(lng)
@@ -30,6 +32,24 @@ export function MobileMenu() {
     }, 700)
   }
 
+  function onBlogContent() {
+    const enButton = document.getElementById('en-button')
+
+    if (location.pathname === '/blog') {
+      if (enButton) {
+        enButton.disabled = true
+      }
+    } else {
+      if (enButton) {
+        enButton.disabled = false
+      }
+    }
+  }
+
+  useEffect(() => {
+    onBlogContent()
+  }, [location.pathname])
+
   return (
     <Container>
       <header>
@@ -46,6 +66,7 @@ export function MobileMenu() {
             <button
               onClick={() => changeLanguage('en')}
               className={selectedLanguage === 'en' ? 'selected' : ''}
+              id="en-button"
             >
               <img
                 src={ukFlag}

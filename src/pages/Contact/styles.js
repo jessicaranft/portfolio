@@ -29,7 +29,7 @@ export const Input = styled.input`
   width: 100%;
   height: 5.6rem;
   background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
-  color: ${({ theme }) => theme.COLORS.WHITE};
+  color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
   border: none;
   padding: 1.6rem 2.4rem;
   margin-bottom: 3.6rem;

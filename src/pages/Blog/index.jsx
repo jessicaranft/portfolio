@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { formatDistanceToNow } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
+
+import { TypeAnimation } from 'react-type-animation'
 
 import { wpApi } from '../../lib/axios'
 
@@ -50,7 +53,12 @@ export function Blog() {
 
   return (
     <Container>
-      <h1>Blog</h1>
+      <TypeAnimation
+        sequence={['Blog']}
+        cursor={true}
+        repeat={1}
+        wrapper={'h1'}
+      />
 
       <PostsContainer>
         <ul>
@@ -59,6 +67,7 @@ export function Blog() {
               <p>
                 {formatDistanceToNow(new Date(post.modified), {
                   addSuffix: true,
+                  locale: ptBR,
                 })}
               </p>
               <strong
