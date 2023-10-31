@@ -37,6 +37,7 @@ export const PostContentContainer = styled.div`
   h2 {
     margin-bottom: 1.2rem;
     text-align: left;
+    line-height: 120%;
   }
 
   span {
@@ -46,6 +47,7 @@ export const PostContentContainer = styled.div`
   }
 
   p,
+  h2,
   h3,
   h4,
   ul,
@@ -62,6 +64,7 @@ export const PostContentContainer = styled.div`
     font-weight: 600;
     color: ${({ theme }) => theme.COLORS.FONT_H2};
     text-align: left;
+    line-height: 120%;
   }
 
   h4 {
