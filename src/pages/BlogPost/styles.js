@@ -80,6 +80,7 @@ export const PostContentContainer = styled.div`
 
     display: block;
     white-space: pre-wrap;
+    text-align: left;
   }
 
   ul {
@@ -101,6 +102,10 @@ export const PostContentContainer = styled.div`
 
     h4 {
       font-size: 1.8rem;
+    }
+
+    pre {
+      font-size: 1.2rem;
     }
   }
 `
