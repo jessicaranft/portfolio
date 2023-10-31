@@ -29,8 +29,14 @@ export const PostContentContainer = styled.div`
     cursor: pointer;
   }
 
+  h1 {
+    font-size: 5.6rem;
+    text-align: left;
+  }
+
   h2 {
     margin-bottom: 1.2rem;
+    text-align: left;
   }
 
   span {
@@ -71,9 +77,24 @@ export const PostContentContainer = styled.div`
     font-size: 1.4rem;
     line-height: 2.6rem;
     color: ${({ theme }) => theme.COLORS.HTML_TAG};
+
+    display: block;
+    white-space: pre-wrap;
+  }
+
+  ul {
+    padding-left: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 
   @media (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+
     h3 {
       font-size: 2.4rem;
     }

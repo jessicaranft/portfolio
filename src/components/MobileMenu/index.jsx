@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { Container, Branding, Languages } from './styles'
@@ -10,8 +10,6 @@ import ukFlag from '../../assets/uk-flag.svg'
 export function MobileMenu() {
   const { t, i18n } = useTranslation()
   const [selectedLanguage, setSelectedLanguage] = useState(null)
-
-  const location = useLocation()
 
   function changeLanguage(lng) {
     i18n.changeLanguage(lng)
@@ -31,24 +29,6 @@ export function MobileMenu() {
       menu.classList.add('hide')
     }, 700)
   }
-
-  function onBlogContent() {
-    const enButton = document.getElementById('en-button')
-
-    if (location.pathname === '/blog') {
-      if (enButton) {
-        enButton.disabled = true
-      }
-    } else {
-      if (enButton) {
-        enButton.disabled = false
-      }
-    }
-  }
-
-  useEffect(() => {
-    onBlogContent()
-  }, [location.pathname])
 
   return (
     <Container>
@@ -98,6 +78,11 @@ export function MobileMenu() {
             <li>
               <NavLink to="/contact" onClick={handleMenuClose}>
                 &lt;{t('menu.contact')} /&gt;
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog" onClick={handleMenuClose}>
+                &lt;{t('menu.blog')} /&gt;
               </NavLink>
             </li>
           </ul>

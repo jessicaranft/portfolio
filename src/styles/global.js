@@ -38,6 +38,10 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  p {
+    line-height: 160%;
+  }
+
   a {
     text-decoration: underline;
     color: ${({ theme }) => theme.COLORS.LOGO};

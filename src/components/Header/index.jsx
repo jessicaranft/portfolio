@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink /*, useLocation */ } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { TfiMenu, TfiClose } from 'react-icons/tfi'
 import { useTranslation } from 'react-i18next'
 
@@ -12,8 +12,6 @@ import ukFlag from '../../assets/uk-flag.svg'
 export function Header() {
   const { t, i18n } = useTranslation()
   const [selectedLanguage, setSelectedLanguage] = useState(null)
-
-  // const location = useLocation()
 
   function changeLanguage(lng) {
     i18n.changeLanguage(lng)
@@ -45,22 +43,6 @@ export function Header() {
       menu.classList.add('hide')
     }, 700)
   }
-
-  /*
-  useEffect(() => {
-    const enButton = document.getElementById('en-button')
-
-    if (location.pathname === '/blog') {
-      if (enButton) {
-        enButton.disabled = true
-      }
-    } else {
-      if (enButton) {
-        enButton.disabled = false
-      }
-    }
-  }, [location.pathname])
-  */
 
   useEffect(() => {
     function closeMenuOutsideClick(e) {
@@ -133,6 +115,9 @@ export function Header() {
               </li>
               <li>
                 <NavLink to="/contact">{t('menu.contact')}</NavLink>
+              </li>
+              <li>
+                <NavLink to="/blog">{t('menu.blog')}</NavLink>
               </li>
             </ul>
           </Menu>

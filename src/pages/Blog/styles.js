@@ -15,16 +15,18 @@ export const Container = styled.main`
 
 export const PostsContainer = styled.div`
   ul {
+    width: 100%;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
+    flex-wrap: wrap;
   }
 
   ul li {
-    width: 32rem;
-    height: 26rem;
+    width: 100%;
+    min-width: 28rem;
+    min-height: 26rem;
     background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
     padding: 3.6rem;
     border-radius: 4px;
@@ -74,6 +76,7 @@ export const PostsContainer = styled.div`
 
   @media (max-width: 768px) {
     ul {
+      display: flex;
       flex-direction: column;
     }
 

@@ -2,7 +2,8 @@
   "menu": {
     "about": "About",
     "portfolio": "Portfolio",
-    "contact": "Get in touch"
+    "contact": "Get in touch",
+    "blog": "Blog (PT)"
   },
   "footer": {
     "copyright": "All rights reserved."
