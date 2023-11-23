@@ -6,11 +6,21 @@ export const Container = styled.main`
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 5.6rem;
 
   flex-grow: 1;
   min-height: 50vh;
+
+  .loading-container {
+    width: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+  }
 `
 
 export const PostsContainer = styled.div`

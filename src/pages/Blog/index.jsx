@@ -1,6 +1,3 @@
-// https://public-api.wordpress.com/wp/v2/sites/jessicaranft71754848434.wordpress.com/
-// Posts: https://public-api.wordpress.com/wp/v2/sites/jessicaranft71754848434.wordpress.com/posts
-
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,13 +9,16 @@ import { TypeAnimation } from 'react-type-animation'
 import { wpApi } from '../../lib/axios'
 
 import { Container, PostsContainer } from './styles'
+import { LoadingSpinner } from '../../components/LoadingSpinner'
 
 export function Blog() {
   const [posts, setPosts] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
   async function fetchPosts() {
     try {
+      setIsLoading(true)
       const response = await wpApi.get('/posts', {
         params: {
           _fields: 'id,title,content,modified,tags,posts,excerpt',
@@ -38,6 +38,7 @@ export function Blog() {
       )
 
       setPosts(postsWithTags)
+      setIsLoading(false)
     } catch (error) {
       console.error('Error while fetching the posts.', error)
     }
@@ -60,29 +61,37 @@ export function Blog() {
         wrapper={'h1'}
       />
 
-      <PostsContainer>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id} onClick={() => handlePostClick(post.id)}>
-              <p>
-                {formatDistanceToNow(new Date(post.modified), {
-                  addSuffix: true,
-                  locale: ptBR,
-                })}
-              </p>
-              <strong
-                dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-              />
-              <p dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-              <div>
-                {post.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </PostsContainer>
+      {isLoading ? (
+        <div className="loading-container">
+          <LoadingSpinner />
+        </div>
+      ) : (
+        <PostsContainer>
+          <ul>
+            {posts.map((post) => (
+              <li key={post.id} onClick={() => handlePostClick(post.id)}>
+                <p>
+                  {formatDistanceToNow(new Date(post.modified), {
+                    addSuffix: true,
+                    locale: ptBR,
+                  })}
+                </p>
+                <strong
+                  dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+                />
+                <div>
+                  {post.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </PostsContainer>
+      )}
     </Container>
   )
 }
