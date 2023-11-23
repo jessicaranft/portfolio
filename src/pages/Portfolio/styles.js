@@ -16,7 +16,7 @@ export const Container = styled.main`
     display: flex;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
 
@@ -74,7 +74,7 @@ export const PortfolioItem = styled.div`
     padding: 0.4rem 0;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     gap: 3.2rem;
   }
 `

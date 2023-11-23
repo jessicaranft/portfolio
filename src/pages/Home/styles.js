@@ -22,7 +22,7 @@ export const Container = styled.main`
   }
 
   .hero {
-    max-width: 60rem;
+    max-width: 50rem;
     margin-left: -7.2rem;
   }
 
@@ -49,7 +49,7 @@ export const Container = styled.main`
     text-decoration: none;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;

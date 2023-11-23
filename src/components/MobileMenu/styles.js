@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   width: 70vw;
@@ -6,6 +6,25 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.COLORS.BG_SECONDARY};
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transform: translateX(-500px);
+  transition: 0.5s;
+
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    `}
 
   > header {
     display: flex;

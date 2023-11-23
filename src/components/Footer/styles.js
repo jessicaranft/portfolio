@@ -14,7 +14,7 @@ export const Container = styled.div`
   padding-left: clamp(3rem, 5rem + 2vw, 15.6rem);
   padding-right: clamp(3rem, 5rem + 2vw, 15.6rem);
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     height: 11.6rem;
     padding: 0 2.4rem;
 

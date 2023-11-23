@@ -48,7 +48,7 @@ export const Container = styled.div`
     padding: 0.4rem 0;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     gap: 3.2rem;
   }
 `

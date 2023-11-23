@@ -94,7 +94,7 @@ export const Container = styled.main`
     font-size: 1.2rem;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
   }

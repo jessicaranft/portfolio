@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     width: 100%;
     height: 100%;
   }
@@ -30,7 +30,7 @@ export const Main = styled.main`
   flex-grow: 1;
   min-height: 50vh;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
     padding: 0 2.4rem;

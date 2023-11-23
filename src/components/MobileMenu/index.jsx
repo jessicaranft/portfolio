@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
@@ -7,7 +7,7 @@ import { Social } from '../Social'
 import brFlag from '../../assets/br-flag.svg'
 import ukFlag from '../../assets/uk-flag.svg'
 
-export function MobileMenu() {
+export function MobileMenu({ visibleMenu, setVisibleMenu }) {
   const { t, i18n } = useTranslation()
   const [selectedLanguage, setSelectedLanguage] = useState(null)
 
@@ -16,25 +16,20 @@ export function MobileMenu() {
     setSelectedLanguage(lng)
   }
 
-  function handleMenuClose() {
-    const openMenu = document.getElementById('open-menu')
-    const closeMenu = document.getElementById('close-menu')
-    const menu = document.getElementById('menu')
-
-    menu.classList.remove('slide-in')
-    menu.classList.add('slide-out')
-    openMenu.classList.remove('hide')
-    closeMenu.classList.add('hide')
-    setTimeout(() => {
-      menu.classList.add('hide')
-    }, 700)
-  }
+  useEffect(() => {
+    document.body.style.overflowY = visibleMenu ? 'hidden' : 'auto'
+  }, [visibleMenu])
 
   return (
-    <Container>
+    <Container isOpen={visibleMenu}>
       <header>
         <Branding>
-          <Link to="/" onClick={handleMenuClose}>
+          <Link
+            to="/"
+            onClick={() => {
+              setVisibleMenu(false)
+            }}
+          >
             J_
           </Link>
         </Branding>
@@ -66,22 +61,42 @@ export function MobileMenu() {
 
           <ul>
             <li>
-              <NavLink to="/about" onClick={handleMenuClose}>
+              <NavLink
+                to="/about"
+                onClick={() => {
+                  setVisibleMenu(false)
+                }}
+              >
                 &lt;{t('menu.about')} /&gt;
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio" onClick={handleMenuClose}>
+              <NavLink
+                to="/portfolio"
+                onClick={() => {
+                  setVisibleMenu(false)
+                }}
+              >
                 &lt;{t('menu.portfolio')} /&gt;
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={handleMenuClose}>
+              <NavLink
+                to="/contact"
+                onClick={() => {
+                  setVisibleMenu(false)
+                }}
+              >
                 &lt;{t('menu.contact')} /&gt;
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blog" onClick={handleMenuClose}>
+              <NavLink
+                to="/blog"
+                onClick={() => {
+                  setVisibleMenu(false)
+                }}
+              >
                 &lt;{t('menu.blog')} /&gt;
               </NavLink>
             </li>

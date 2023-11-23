@@ -94,7 +94,7 @@ export const PostContentContainer = styled.div`
     gap: 1.6rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     h1 {
       font-size: 2.8rem;
     }
@@ -136,7 +136,7 @@ export const PostDetailsContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;

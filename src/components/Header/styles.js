@@ -41,7 +41,7 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     height: 11.6rem;
     padding: 5.6rem 2.4rem;
 
@@ -60,39 +60,19 @@ export const Container = styled.div`
     .cursor-pointer {
       cursor: pointer;
     }
+  }
+`
 
-    #menu {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 999;
-    }
+export const MobileMenuButton = styled.button`
+  display: none;
 
-    .slide-in {
-      animation: slide-in 700ms;
-    }
+  border: 0;
+  background: none;
+  color: ${({ theme }) => theme.COLORS.FONT_PRIMARY};
+  line-height: 0;
 
-    .slide-out {
-      animation: slide-out 700ms;
-    }
-
-    @keyframes slide-in {
-      0% {
-        transform: translateX(-500px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes slide-out {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-500px);
-      }
-    }
+  @media only screen and (max-width: 900px) {
+    display: block;
   }
 `
 

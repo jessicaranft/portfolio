@@ -21,7 +21,7 @@ export const DefaultLayoutContainer = styled.div`
     flex: 1;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     .content-wrapper {
       padding: 3.6rem 2.4rem;
     }

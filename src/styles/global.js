@@ -81,7 +81,7 @@ export default createGlobalStyle`
     display: block;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     h1 {
       font-size: 3.8rem;
     }
