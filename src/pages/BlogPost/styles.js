@@ -11,6 +11,15 @@ export const Container = styled.main`
 
   flex-grow: 1;
   min-height: 50vh;
+
+  .loading-container {
+    width: 100%;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 export const PostContentContainer = styled.div`
