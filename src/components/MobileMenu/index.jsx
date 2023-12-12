@@ -90,6 +90,7 @@ export function MobileMenu({ visibleMenu, setVisibleMenu }) {
                 &lt;{t('menu.contact')} /&gt;
               </NavLink>
             </li>
+            {/*
             <li>
               <NavLink
                 to="/blog"
@@ -100,6 +101,7 @@ export function MobileMenu({ visibleMenu, setVisibleMenu }) {
                 &lt;{t('menu.blog')} /&gt;
               </NavLink>
             </li>
+            */}
           </ul>
 
           <Social />

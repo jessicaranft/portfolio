@@ -86,9 +86,11 @@ export function Header() {
               <li>
                 <NavLink to="/contact">{t('menu.contact')}</NavLink>
               </li>
+              {/*
               <li>
                 <NavLink to="/blog">{t('menu.blog')}</NavLink>
               </li>
+              */}
             </ul>
           </Menu>
 
